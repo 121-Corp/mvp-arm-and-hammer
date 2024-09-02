@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use App\View\Components\Header;
+use App\View\Components\Informative;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Blade::component('header', Header::class);
+        Blade::component('informative', Informative::class);
     }
 }

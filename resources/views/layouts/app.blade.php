@@ -18,7 +18,7 @@
             @include('components.menu')
         @show
 
-        <div class="container">
+        <div class="container max-w-[1920px]">
             @yield('content')
         </div>
 

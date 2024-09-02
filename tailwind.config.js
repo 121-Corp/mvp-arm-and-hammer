@@ -6,7 +6,11 @@ export default {
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            letterSpacing: {
+                'common': '-0.338px'
+            }
+        },
     },
     plugins: [],
 };
