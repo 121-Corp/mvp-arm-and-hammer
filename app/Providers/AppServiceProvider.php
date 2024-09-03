@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\View\Components\Footer;
 use App\View\Components\Header;
 use App\View\Components\Informative;
 use Illuminate\Support\ServiceProvider;
@@ -24,5 +25,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Blade::component('header', Header::class);
         Blade::component('informative', Informative::class);
+        Blade::component('footer', Footer::class);
     }
 }

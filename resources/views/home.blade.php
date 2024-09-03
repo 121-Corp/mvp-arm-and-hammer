@@ -7,10 +7,7 @@
     @parent
 @endsection
 @section('content')
-    {{-- <div class="h-[36px] bg-black w-full">k</div> --}}
-    {{-- <x-alert :subTitle="$subTitle" :title="$title" ></x-alert> --}}
     <x-header :$title :$subtitle :$phrase :isHome="true"></x-header>
-
     <div class="flex flex-col lg:flex-row w-full text-white">
         <div class="h-[432px] lg:h-auto bg-[#004697] py-[70px] px-[19px] lg:px-0 lg:py-[100] lg:pl-[167px] lg:pr-[81px] lg:w-1/2 ">
             <h2 class="text-[48px] font-black leading-[100%] uppercase">Segment</h2>

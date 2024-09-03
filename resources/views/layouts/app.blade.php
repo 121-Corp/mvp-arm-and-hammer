@@ -21,8 +21,7 @@
         <div class="container max-w-[1920px]">
             @yield('content')
         </div>
-
-        {{-- @include('partials.footer') --}}
+        <x-footer></x-footer>
         @yield('css')
         @yield('js')
     </body>
