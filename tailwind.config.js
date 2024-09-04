@@ -6,6 +6,10 @@ export default {
         "./resources/**/*.vue",
     ],
     theme: {
+        fontFamily:{
+            '': [],
+            '': []
+        },
         extend: {
             letterSpacing: {
                 'common': '-0.338px'

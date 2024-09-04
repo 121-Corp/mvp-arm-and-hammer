@@ -15,12 +15,13 @@
     <body class="font-sans antialiased ">
 
         @section('sidebar')
-            @include('components.menu')
+        @include('components.menu') {{-- render de menu in all pages  --}}
         @show
 
         <div class="container max-w-[1920px]">
             @yield('content')
         </div>
+
         <x-footer></x-footer>
         @yield('css')
         @yield('js')

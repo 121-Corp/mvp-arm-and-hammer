@@ -8,4 +8,6 @@
 @endsection
 @section('content')
 
+<x-header :$title :$subtitle :$phrase :isHome="false" ></x-header>
+
 @endsection

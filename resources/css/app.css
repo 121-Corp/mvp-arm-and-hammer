@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+/* @font-face {
+    font-family: 'Signifier';
+    src: url('./../../fonts/Signifier/Signifier-Thin.otf') format('woff2'),
+        url('./../../fonts/Signifier/Signifier-Thin.otf') format('opentype'),
+        url('./../../fonts/Signifier/Signifier-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: thin;
+    font-display: swap;
+} */

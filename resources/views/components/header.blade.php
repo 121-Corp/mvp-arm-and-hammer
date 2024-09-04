@@ -12,8 +12,8 @@
 <header
     class="flex overflow-hidden items-center bg-center bg-no-repeat bg-cover bg-blend-normal text-start h-[100vh] w-full sm:absolute lg:relative" id="header">
     <div class="w-11/12 mx-auto lg:mx-[89px] h-full lg:w-8/12">
-        <div class="text-left flex flex-col justify-around lg:justify-center items-start lg:items-center h-screen">
-            <div class="w-full">
+        <div class="text-left flex flex-col justify-around lg:justify-center  lg:items-center h-screen">
+            <div class="w-full  @if($isHome) items-start  @else items-center @endif">
                 <h1
                     class="text-[37px] tracking-common text-left leading-[120%] font-black text-white lg:text-[89px] lg:leading-[100%] lg:tracking-[-0.898px]">
                     @isset($title)

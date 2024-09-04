@@ -77,15 +77,12 @@
     const goHome = function() {
         window.location.href = "{{ route('home') }}";
     }
-
     const menuMoobile = document.getElementById('mobileMenu');
-
     function closeMenu() {
         if (!menuMoobile.classList.contains('hidden')) {
             menuMoobile.classList.add('hidden');
         }
     }
-
     // Toggle the mobile menu
     document.getElementById('mobileMenuButton').addEventListener('click', function(event) {
         menuMoobile.classList.toggle('hidden');

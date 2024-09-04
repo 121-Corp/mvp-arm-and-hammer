@@ -7,6 +7,7 @@
     @parent
 @endsection
 @section('content')
+
     <x-header :$title :$subtitle :$phrase :isHome="true"></x-header>
     <div class="flex flex-col lg:flex-row w-full text-white">
         <div class="h-[432px] lg:h-auto bg-[#004697] py-[70px] px-[19px] lg:px-0 lg:py-[100] lg:pl-[167px] lg:pr-[81px] lg:w-1/2 ">
