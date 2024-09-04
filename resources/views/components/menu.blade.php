@@ -10,7 +10,7 @@
         class="navbar flex relative justify-between items-center w-11/12 lg:w-full top-0 right-0 rounded-[37px] md:rounded-[0px] md:mt-0 h-auto sm:h-full text-[#1E1E1E] bg-white m-auto z-[99]">
         <div class="m-2 sm:m-8 md:p-0 w-2/12 flex justify-end h-full relative">
             <img class="ml-5 h-auto cursor-pointer md:w-[124px] md:absolute md:top-5 md:right-0"
-                src="{{ asset('images/general/logo_x2.png') }}" onclick="goHome();" alt="logo" />
+                src="{{ asset('images/general/Logo.svg') }}" onclick="goHome();" alt="logo" />
         </div>
         <div class="mr-[20px] md:mr-[165px] md:w-10/12 h-full sm:contents">
             <div

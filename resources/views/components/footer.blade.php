@@ -1,7 +1,6 @@
 <div class="text-white bg-[#004697] py-[80px] px-[19px] w-full h-auto">
     <div class="flex flex-col lg:flex-row">
-        <img src="{{asset('images/general/logo_x2.png')}}" class="lg:hidden" alt="">
-        <img src="{{asset('images/general/logo_desktop_x2.png')}}" class="hidden lg:block" alt="">
+        <img src="{{asset('images/general/Logo.svg')}}" class="" alt="">
         <div>
             <div class="">
 
