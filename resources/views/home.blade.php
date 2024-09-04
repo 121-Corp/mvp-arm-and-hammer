@@ -45,8 +45,8 @@
                             </svg>
                         </a>
                     </div>
-                    <img src="{{ asset('images/home/segments_x2.png') }}" class="lg:hidden" alt="">
-                    <img src="{{ asset('images/home/segments_desktop_x1.png') }}" class="hidden lg:block" alt="">
+                    <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}" class="lg:hidden" alt="">
+                    <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}" class="hidden lg:block" alt="">
                 </div>
             </div>
         </div>
@@ -81,8 +81,8 @@
             </p>
         </div>
         <div class="flex flex-row text-left mt-[40px]">
-            <img src="{{ asset('images/home/segments_x2.png') }}" class="lg:hidden" alt="">
-            <img src="{{ asset('images/home/segments_desktop_x1.png') }}" class="hidden lg:block" alt="">
+            <img src="{{ asset('') }}" class="lg:hidden" alt="">
+            <img src="{{ asset('') }}" class="hidden lg:block" alt="">
         </div>
     </div>
     {{-- </div> --}}

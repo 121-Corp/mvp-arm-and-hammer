@@ -13,8 +13,8 @@ class PageController extends Controller
             "title" => "YOUR NUTRITION POWERHOUSE",
             "subtitle" => "Solutions for a more secure food system.",
             "phrase" => "Cattle feed ingredients that optimize dairy cow health.",
-            "imgPathDesktop" => "images/home/header-desktop_x2.png",
-            "imgPathMovil" => "images/home/header-movil_x2.png",
+            "imgPathDesktop" => "images/Desk/Home/Banner_Home_2x.png",
+            "imgPathMovil" => "images/Mobile/Home/Banner_Home_2x.png",
         ]);
     }
 

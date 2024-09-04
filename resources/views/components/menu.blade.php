@@ -32,7 +32,7 @@
             <div class="flex flex-col justify-center h-auto w-[70px] relative md:w-[125px]">
                 <img
                     class="h-auto cursor-pointer md:absolute md:bottom-0 md:translate-y-1/2"
-                    src="{{ asset('images/general/logo_x2.png') }}"
+                    src="{{ asset('images/general/Logo.svg') }}"
                     onclick="goHome();"
                     alt="logo"
                 />
