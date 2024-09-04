@@ -32,7 +32,7 @@
             <div class="flex flex-col justify-center h-auto w-[70px] relative md:w-[125px]">
                 <img
                     class="h-auto cursor-pointer md:absolute md:bottom-0 md:translate-y-1/2"
-                    src="{{ asset('images/general/logo_x2.png') }}"
+                    src="{{ asset('images/general/Logo.svg') }}"
                     onclick="goHome();"
                     alt="logo"
                 />
@@ -122,15 +122,12 @@
     const goHome = function() {
         window.location.href = "{{ route('home') }}";
     }
-
     const menuMoobile = document.getElementById('mobileMenu');
-
     function closeMenu() {
         if (!menuMoobile.classList.contains('hidden')) {
             menuMoobile.classList.add('hidden');
         }
     }
-
     // Toggle the mobile menu
     document.getElementById('mobileMenuButton').addEventListener('click', function(event) {
         menuMoobile.classList.toggle('hidden');
