@@ -30,9 +30,6 @@ export default {
                 'ah-light-blue': 'rgb(108, 162, 242)', /* #6ca2f2 */
                 'ah-dark-blue': 'rgb(0, 47, 135)', /* #002f87 */
             },
-            letterSpacing: {
-                'common': '-0.338px'
-            },
             screens: {
               'xl': '1280px',
               '2xl': '1366px',
