@@ -13,7 +13,6 @@
         @vite('resources/css/app.css')
     </head>
     <body class="font-sans antialiased ">
-
         @section('sidebar')
             @include('components.menu')
         @show
@@ -21,6 +20,7 @@
         <div class="container max-w-[1920px]">
             @yield('content')
         </div>
+
         <x-footer></x-footer>
         @yield('css')
         @yield('js')
