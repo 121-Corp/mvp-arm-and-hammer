@@ -1,3 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Intro Cond";
+    src: url("../../public/fonts/IntroDemoCond-Black.woff2"),
+         url("../../public/fonts/IntroDemoCond-Black.woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Light.woff2"),
+         url("../../public/fonts/KohinoorLatin-Light.woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-LightItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-LightItalic.woff");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Book.woff2"),
+         url("../../public/fonts/KohinoorLatin-Book.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-BookItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-BookItalic.woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Demi.woff2"),
+         url("../../public/fonts/KohinoorLatin-Demi.woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-DemiItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-DemiItalic.woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Medium.woff2"),
+         url("../../public/fonts/KohinoorLatin-Medium.woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-MediumItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-MediumItalic.woff");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Bold.woff2"),
+         url("../../public/fonts/KohinoorLatin-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-BoldItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-BoldItalic.woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Black.woff2"),
+         url("../../public/fonts/KohinoorLatin-Black.woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-BlackItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-BlackItalic.woff");
+    font-weight: 900;
+    font-style: italic;
+}

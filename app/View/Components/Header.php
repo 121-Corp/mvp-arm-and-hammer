@@ -15,7 +15,9 @@ class Header extends Component
         public ?string $title,
         public ?string $subtitle,
         public ?string $phrase,
-        public ?bool $isHome,
+        public ?string $imgPathDesktop,
+        public ?string $imgPathMovil,
+        public ?bool $isHome
     )
     { }
 
