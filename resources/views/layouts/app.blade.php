@@ -12,7 +12,7 @@
         <!-- Styles -->
         @vite('resources/css/app.css')
     </head>
-    <body class="font-sans antialiased ">
+    <body class="font-kohinoor font-normal antialiased ">
         @section('sidebar')
             @include('components.menu')
         @show

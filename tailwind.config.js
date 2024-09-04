@@ -29,6 +29,9 @@ export default {
             letterSpacing: {
                 'common': '-0.338px'
             },
+            transitionProperty: {
+                'decoration-color': 'text-decoration-color'
+            },
             screens: {
               'xl': '1280px',
               '2xl': '1366px',
