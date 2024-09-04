@@ -13,7 +13,6 @@
         @vite('resources/css/app.css')
     </head>
     <body class="font-sans antialiased ">
-
         @section('sidebar')
         @include('components.menu') {{-- render de menu in all pages  --}}
         @show
