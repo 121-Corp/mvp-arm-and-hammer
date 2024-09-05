@@ -64,7 +64,7 @@
                     </li>
                     <li class="mb-[20px]">
                         <a
-                            href="#"
+                            href="{{ route('distributors') }}"
                             class="ah-text-link"
                         >Distributors</a>
                     </li>

@@ -27,7 +27,10 @@ export default {
                 'ah-dark-blue': 'rgb(0, 47, 135)', /* #002f87 */
             },
             letterSpacing: {
-                'common': '-0.338px'
+                'common': '-0.01em'
+            },
+            textShadow: {
+                'default': '0px 4px 34px rgba(0, 0, 0, 0.25);'
             },
             transitionProperty: {
                 'decoration-color': 'text-decoration-color'

@@ -6,6 +6,7 @@
 @section('sidebar')
     @parent
 @endsection
-@section('content')
 
+@section('content')
+<x-header :$title :$subtitle :$phrase :$imgPathDesktop :$imgPathMovil :isHome="false" :isDistributors="false" />
 @endsection
