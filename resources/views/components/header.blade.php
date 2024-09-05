@@ -18,10 +18,10 @@
     </div>
     <div
         @class([
-            'flex flex-col items-stretch gap-y-[60px] ah-container h-full pt-[8vh] pb-[10vh] relative',
+            'flex flex-col items-stretch  ah-container h-full pt-[8vh] pb-[10vh] relative',
             'sm:pt-[5vh] sm:pb-[5vh] sm:justify-center',
-            'justify-between' => (!isset($headerType) or ($headerType !== 'distributors')),
-            'justify-end' => (isset($headerType) and ($headerType == 'distributors')),
+            'justify-between gap-y-[60px] pb-[10vh]' => (!isset($headerType) or ($headerType !== 'distributors')),
+            'justify-end gap-y-[20px] pb-[15vh]' => (isset($headerType) and ($headerType == 'distributors')),
             'sm:items-center sm:text-center sm:gap-y-[30px]' => (!isset($headerType) or ($headerType != 'home')),
             'sm:gap-y-[40px] lg:gap-y-[55px]' => (isset($headerType) and $headerType == 'home'),
             '2xl:px-[90px]', '3xl:px-[90px]'
@@ -38,8 +38,9 @@
                 <h1
                     @class([
                         'm-0 font-intro font-black text-[42px] tracking-[-0.01em]',
-                        'leading-[1.15] text-[48px] sm:text-[68px] lg:text-[96px] lg:leading-none' => (!isset($headerType) or ($headerType != 'home')),
                         'leading-none text-[42px] sm:text-[62px] lg:text-[90px]' => (isset($headerType) and $headerType == 'home'),
+                        'leading-none text-[44px] sm:text-[68px] lg:text-[96px]' => (isset($headerType) and $headerType == 'distributors'),
+                        'leading-[1.15] text-[48px] sm:text-[68px] lg:text-[96px] lg:leading-none' => (!isset($headerType) or ($headerType == 'default')),
                     ])
                 >{{ $title }}</h1>
             @endif
@@ -49,7 +50,9 @@
         </div>
         <div
             @class([
-                'flex flex-col justify-between items-stretch h-auto gap-y-[25px] max-w-[350px] ',
+                'flex flex-col justify-between items-stretch h-auto  ',
+                'gap-y-[35px] max-w-[325px] sm:gap-y-[40px] lg:gap-y-[55px]' => (isset($headerType) and $headerType == 'distributors'),
+                'gap-y-[25px] max-w-[350px]' => (!isset($headerType) or $headerType != 'distributors'),
                 'sm:max-w-[480px] lg:max-w-[66%]' => (!isset($headerType) or ($headerType != 'home')),
                 'sm:max-w-[400px] lg:max-w-[40%] xl:max-w-[35%]' => (isset($headerType) and $headerType == 'home'),
             ])
@@ -60,9 +63,11 @@
             @if(isset($phrase) and !empty($phrase))
                 <p
                     @class([
-                        'm-0 font-normal tracking-[-0.01em] text-shadow-default',
-                        'leading-[1.2] text-[20px] sm:text-[24px] lg:text-[28px]' => (!isset($headerType) or ($headerType != 'home')),
-                        'leading-[1.17] text-[24px] sm:text-[26px] lg:text-[28px] lg:leading-[1.2]' => (isset($headerType) and $headerType == 'home'),
+                        'm-0 font-normal tracking-[-0.01em]',
+                        'leading-[1.17] text-[24px] text-shadow sm:text-[26px] lg:text-[28px] lg:leading-[1.2]' => (isset($headerType) and $headerType == 'home'),
+                        'leading-[1.2] text-[16px] sm:text-[22px] sm:text-shadow-[0_4px_24px_#000000] lg:text-[28px]' => (isset($headerType) and $headerType == 'distributors'),
+                        'leading-[1.2] text-[20px] text-shadow sm:text-shadow-unset sm:text-[24px] lg:text-[28px]' => (!isset($headerType) or ($headerType == 'default')),
+
                     ])
                 >{{ $phrase }}</p>
             @endif

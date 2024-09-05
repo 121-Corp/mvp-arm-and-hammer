@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
     content: [
         "./resources/**/*.blade.php",
@@ -30,7 +33,8 @@ export default {
                 'common': '-0.01em'
             },
             textShadow: {
-                'default': '0px 4px 34px rgba(0, 0, 0, 0.25);'
+                DEFAULT: '0px 4px 34px 0 rgba(0, 0, 0, 0.25)',
+                'unset': 'unset'
             },
             transitionProperty: {
                 'decoration-color': 'text-decoration-color'
@@ -43,5 +47,16 @@ export default {
             }
         },
     },
-    plugins: [],
+    plugins: [
+        plugin(function ({ matchUtilities, theme }) {
+          matchUtilities(
+            {
+              'text-shadow': (value) => ({
+                textShadow: value,
+              }),
+            },
+            { values: theme('textShadow') }
+          )
+        }),
+    ],
 };
