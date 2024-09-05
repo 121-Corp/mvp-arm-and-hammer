@@ -8,7 +8,7 @@
                 <a
                     href="{{ route('home') }}"
                     class="inline-flex flex-nowrap justify-start items-center content-center gap-[5px]
-                           no-underline scale-100 transition-transform duration-500 hover:scale-105"
+                           no-underline scale-100 transition-transform duration-500 will-change-transform hover:scale-105"
                 >
                     <div class="flex-initial max-w-[133px] md:max-w-[144px]">
                         <img

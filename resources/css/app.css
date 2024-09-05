@@ -119,4 +119,13 @@
   .ah-text-link:active {
     @apply underline decoration-1 underline-offset-1 decoration-current
   }
+
+  .ah-text-link-underline {
+    @apply underline decoration-1 underline-offset-1 decoration-current transition-decoration-color duration-300 ease-in-out
+  }
+
+  .ah-text-link-underline:hover,
+  .ah-text-link-underline:active {
+    @apply underline decoration-1 underline-offset-1 decoration-transparent
+  }
 }

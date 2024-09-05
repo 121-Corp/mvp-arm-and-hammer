@@ -10,3 +10,6 @@ Route::get('/products',[PageController::class,'products'])->name('products');
 
 
 Route::get('/distributors',[PageController::class,'distributors'])->name('distributors');
+
+
+Route::get('/representative',[PageController::class,'representative'])->name('representative');

@@ -39,4 +39,14 @@ class PageController extends Controller
         ]);
     }
 
+    public function representative(){
+        return view('representative')->with([
+            "title" => "Sales Representative",
+            "subtitle" => "",
+            "phrase" => "Looking for an Arm & Hammer Animal Nutrition sales representative near you?",
+            "imgPathDesktop" => "images/Desk/Sales_Representative/Banner_Sales_2x.png",
+            "imgPathMovil" => "images/Mobile/Sales_Representative/Banner_Sales_Representatives_2x.png",
+            "headerType" => "representative"
+        ]);
+    }
 }
