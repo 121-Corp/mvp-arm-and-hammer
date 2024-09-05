@@ -13,8 +13,8 @@
         }
     }
 </style>
-<header class="flex overflow-hidden items-center bg-top bg-no-repeat bg-cover bg-blend-normal text-start h-[100vh] w-full sm:absolute lg:relative" id="header">
-        <div class="h-full w-full lg:w-8/12 lg:mx-[89px] mx-[14px] text-left flex flex-col justify-around lg:justify-center">
+<header class="h-[100vh] flex overflow-hidden items-center bg-top bg-no-repeat bg-cover bg-blend-normal text-start w-full sm:absolute lg:relative" id="header">
+        <div class="h-[87vh] w-full lg:w-8/12 lg:mx-[89px] mx-[14px] text-left flex flex-col justify-between lg:justify-center my-[50px]">
             <div class="w-full lg:w-11/12">
                 <h1 class="text-[41.76px] tracking-[-0.418px] text-left font-intro leading-[100%] font-black
                      text-white lg:text-[89.76px] lg:tracking-[-0.898px]">

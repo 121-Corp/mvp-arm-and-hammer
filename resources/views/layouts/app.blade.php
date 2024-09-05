@@ -17,9 +17,9 @@
         @include('components.menu') {{-- render de menu in all pages  --}}
         @show
 
-        <div class="container max-w-[1920px]">
+        {{-- <div class="container"> --}}
             @yield('content')
-        </div>
+        {{-- </div> --}}
 
         <x-footer></x-footer>
         @yield('css')
