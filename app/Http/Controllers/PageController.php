@@ -15,6 +15,7 @@ class PageController extends Controller
             "phrase" => "Cattle feed ingredients that optimize dairy cow health.",
             "imgPathDesktop" => "images/Desk/Home/Banner_Home_2x.png",
             "imgPathMovil" => "images/Mobile/Home/Banner_Home_2x.png",
+            "headerType" => "home"
         ]);
     }
 
@@ -23,6 +24,7 @@ class PageController extends Controller
             "title" => "Dairy Products",
             "subtitle" => "Innovating across the food chain.",
             "phrase" => "Our experts use science to enhance animal health and food safety, driving positive change for animals, people, and the planet.",
+            "headerType" => "default"
         ]);
     }
 
@@ -33,6 +35,7 @@ class PageController extends Controller
             "phrase" => "Looking for an Arm & Hammer Animal Nutrition distributor near you?",
             "imgPathDesktop" => "images/Desk/Distributors/Banner_Distributors_2x.png",
             "imgPathMovil" => "images/Mobile/Distributors/Banner_Distributor_2x.png",
+            "headerType" => "distributors"
         ]);
     }
 

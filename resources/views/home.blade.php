@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-    <x-header :$title :$subtitle :$phrase :$imgPathDesktop :$imgPathMovil :isHome="true" />
+    <x-header :$title :$subtitle :$phrase :$imgPathDesktop :$imgPathMovil :$headerType />
 
     <div class="flex flex-col lg:flex-row w-full text-white">
         <div

@@ -8,5 +8,5 @@
 @endsection
 
 @section('content')
-<x-header :$title :$subtitle :$phrase :$imgPathDesktop :$imgPathMovil :isHome="false" :isDistributors="true" />
+<x-header :$title :$subtitle :$phrase :$imgPathDesktop :$imgPathMovil :$headerType />
 @endsection
