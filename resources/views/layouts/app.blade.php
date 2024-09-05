@@ -17,7 +17,7 @@
         @include('components.menu') {{-- render de menu in all pages  --}}
         @show
 
-        <div class="container max-w-[1920px]">
+        <div class="container max-w-[1920px] mx-auto my-0">
             @yield('content')
         </div>
 

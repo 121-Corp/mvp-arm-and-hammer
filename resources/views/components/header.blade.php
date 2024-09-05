@@ -77,10 +77,20 @@
             @endif
             @if(isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative')))
                 <div class="w-full">
-                    <form name="distributor-representative-search" action="/" method="post">
+                    <form
+                        @if($headerType == 'distributors')
+                            name="distributor-search"
+                        @endif
+                        @if($headerType == 'representative')
+                            name="sales-representative-search"
+                        @endif
+                        action="/"
+                        method="post"
+                    >
                         <div class="w-full m-0 max-w-[350px] relative sm:mx-auto sm:max-w-[470px]">
                             <input
                                 type="search"
+                                name="state"
                                 @class([
                                     'w-full m-0 pt-[18px] pb-[22px] pl-[30px] pr-[75px] relative font-light text-[18px] leading-[1.67] tracking-[-0.01em]',
                                     'border border-solid border-white text-white caret-white placeholder:text-white',
