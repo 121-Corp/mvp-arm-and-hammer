@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
     content: [
         "./resources/**/*.blade.php",
@@ -6,10 +9,6 @@ export default {
         "./resources/**/*.vue",
     ],
     theme: {
-        fontFamily:{
-            '': [],
-            '': []
-        },
         extend: {
             fontFamily: {
                 intro: ["Intro Cond", "sans-serif"],
@@ -30,6 +29,16 @@ export default {
                 'ah-light-blue': 'rgb(108, 162, 242)', /* #6ca2f2 */
                 'ah-dark-blue': 'rgb(0, 47, 135)', /* #002f87 */
             },
+            letterSpacing: {
+                'common': '-0.01em'
+            },
+            textShadow: {
+                DEFAULT: '0px 4px 34px 0 rgba(0, 0, 0, 0.25)',
+                'unset': 'unset'
+            },
+            transitionProperty: {
+                'decoration-color': 'text-decoration-color'
+            },
             screens: {
               'xl': '1280px',
               '2xl': '1366px',
@@ -38,5 +47,16 @@ export default {
             }
         },
     },
-    plugins: [],
+    plugins: [
+        plugin(function ({ matchUtilities, theme }) {
+          matchUtilities(
+            {
+              'text-shadow': (value) => ({
+                textShadow: value,
+              }),
+            },
+            { values: theme('textShadow') }
+          )
+        }),
+    ],
 };

@@ -25,7 +25,7 @@
     id="mainHeader"
     class="flex justify-start items-center w-full relative z-[99] bg-ah-lightest-grey md:bg-white"
 >
-    <div class="w-full max-w-[1440px] px-[15px] md:px-[20px] lg:px-[40px] xl:px-[70px] 2xl:px-[110px] 3xl:px-[165px]">
+    <div class="ah-container">
         <nav
             class="navbar flex justify-between items-stretch w-full h-auto mx-auto my-[8px] rounded-[50px] bg-white text-ah-darkest-grey
                    md:rounded-[0px] md:my-0">
@@ -62,7 +62,7 @@
                     </div>
                     <div class="text-center md:flex md:flex-col md:h-full md:items-center md:justify-center">
                         <a
-                            href="#"
+                            href="{{ route('distributors') }}"
                             class="inline-flex justify-center items-center my-[20px] pt-[15px] pb-[19px] px-[20px]
                                    font-kohinoor font-medium text-[14px] leading-none text-center no-underline
                                    text-white bg-ah-blue border
@@ -106,7 +106,7 @@
                     <a class="text-xl font-kohinoor font-semibold p-0 md:p-4" href="#">Contact</a>
                     <div class="md:m-4">
                         <a
-                            href="#"
+                            href="{{ route('distributors') }}"
                             class="inline-flex justify-center items-center m-0 pt-5 pb-6 px-12
                                    font-kohinoor font-medium text-xl leading-none text-center no-underline
                                    text-white bg-ah-blue border
