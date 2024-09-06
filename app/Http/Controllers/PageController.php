@@ -49,4 +49,15 @@ class PageController extends Controller
             "headerType" => "representative"
         ]);
     }
+
+    public function contact(){
+        return view('contact')->with([
+            "title" => "Set Your Herd Apart",
+            "subtitle" => "",
+            "phrase" => "You’re ready to build a resilient herd. And, we’re here to help. ",
+            "imgPathDesktop" => "images/Desk/Sales_Representative/Banner_Sales_2x.png",
+            "imgPathMovil" => "images/Mobile/Sales_Representative/Banner_Sales_Representatives_2x.png",
+            "headerType" => "default"
+        ]);
+    }
 }

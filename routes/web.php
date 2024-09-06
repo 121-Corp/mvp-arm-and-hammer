@@ -13,3 +13,6 @@ Route::get('/distributors',[PageController::class,'distributors'])->name('distri
 
 
 Route::get('/representative',[PageController::class,'representative'])->name('representative');
+
+
+Route::get('/contact',[PageController::class,'contact'])->name('contact');

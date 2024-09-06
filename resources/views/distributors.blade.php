@@ -30,61 +30,10 @@
         </div>
     </div>
     <div>
-        <div id="distributors-list" class="flex flex-wrap justify-center content-stretch items-stretch">
-            <style>
-                @media (min-width: 640px) {
-                    #sales-representatives-list > div:nth-of-type(2n-1):last-child:before {
-                        content: "";
-                        display: block;
-                        width: 1px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #efefef;
-                    }
-                }
-
-                @media (min-width: 768px) {
-                    #sales-representatives-list > div:nth-of-type(3n-1):last-child:before,
-                    #sales-representatives-list > div:nth-of-type(3n-2):last-child:before {
-                        content: "";
-                        display: block;
-                        width: 1px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #efefef;
-                    }
-                }
-
-                @media (min-width: 1920px) {
-                    #sales-representatives-list > div:nth-of-type(4n):before {
-                        content: "";
-                        display: block;
-                        width: 1px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #efefef;
-                    }
-
-                    #sales-representatives-list > div:nth-of-type(4n-1):last-child:before,
-                    #sales-representatives-list > div:nth-of-type(4n-2):last-child:before,
-                    #sales-representatives-list > div:nth-of-type(4n-3):last-child:before {
-                        content: "";
-                        display: block;
-                        width: 1px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #efefef;
-                    }
-                }
-            </style>
+        <div
+            id="distributors-list"
+            class="contact-cards-list flex flex-wrap justify-center content-stretch items-stretch"
+        >
             @for ($i = 0; $i < 6; $i++)
                 <div
                     class="flex-auto flex flex-col justify-center items-start w-auto h-auto py-[55px] px-[30px] relative

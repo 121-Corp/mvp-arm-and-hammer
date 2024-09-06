@@ -30,61 +30,10 @@
         </div>
     </div>
     <div>
-        <div id="sales-representatives-list" class="flex flex-wrap justify-center content-stretch items-stretch">
-            <style>
-                @media (min-width: 640px) {
-                    #sales-representatives-list > div:nth-of-type(2n-1):last-child:before {
-                        content: "";
-                        display: block;
-                        width: 1px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #efefef;
-                    }
-                }
-
-                @media (min-width: 768px) {
-                    #sales-representatives-list > div:nth-of-type(3n-1):last-child:before,
-                    #sales-representatives-list > div:nth-of-type(3n-2):last-child:before {
-                        content: "";
-                        display: block;
-                        width: 1px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #efefef;
-                    }
-                }
-
-                @media (min-width: 1920px) {
-                    #sales-representatives-list > div:nth-of-type(4n):before {
-                        content: "";
-                        display: block;
-                        width: 1px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #efefef;
-                    }
-
-                    #sales-representatives-list > div:nth-of-type(4n-1):last-child:before,
-                    #sales-representatives-list > div:nth-of-type(4n-2):last-child:before,
-                    #sales-representatives-list > div:nth-of-type(4n-3):last-child:before {
-                        content: "";
-                        display: block;
-                        width: 1px;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #efefef;
-                    }
-                }
-            </style>
+        <div
+            id="sales-representatives-list"
+            class="contact-cards-list flex flex-wrap justify-center content-stretch items-stretch"
+        >
             <div
                 class="flex-auto flex flex-col justify-center items-start w-auto h-auto py-[55px] px-[30px] relative
                            sm:items-center sm:grow-0 sm:basis-1/2 lg:basis-1/3 xl:py-[70px] xl:px-[50px]
