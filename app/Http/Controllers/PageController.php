@@ -24,6 +24,8 @@ class PageController extends Controller
             "title" => "Dairy Products",
             "subtitle" => "Innovating across the food chain.",
             "phrase" => "Our experts use science to enhance animal health and food safety, driving positive change for animals, people, and the planet.",
+            "imgPathDesktop" => "images/Desk/Products/Banner_Products_2x.png",
+            "imgPathMovil" => "images/Mobile/Products/Banner_Products_2x.png",
             "headerType" => "default"
         ]);
     }

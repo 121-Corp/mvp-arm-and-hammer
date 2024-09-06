@@ -19,11 +19,11 @@
     <div
         @class([
             'flex flex-col items-stretch ah-container h-full pt-[8vh] relative',
-            'sm:pt-[5%] sm:pb-[5%] sm:justify-center xl:justify-start xl:pt-[9%] sm:pb-[3%]',
+            'sm:pt-[5%] sm:pb-[5%] sm:justify-center xl:justify-start',
             'justify-between gap-y-[60px] pb-[10vh]' => (!isset($headerType) or (($headerType !== 'distributors') and ($headerType != 'representative'))),
             'justify-end gap-y-[20px] pb-[15vh]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative'))),
-            'sm:gap-y-[30px]' => (!isset($headerType) or ($headerType != 'home')),
-            'sm:gap-y-[40px] lg:gap-y-[55px] xl:justify-center xl:pt-[5vh] sm:pb-[5vh]' => (isset($headerType) and $headerType == 'home'),
+            'sm:gap-y-[30px] xl:pt-[10%] xl:pb-[3%]' => (!isset($headerType) or ($headerType != 'home')),
+            'sm:gap-y-[40px] lg:gap-y-[55px] xl:justify-center xl:pt-[5vh] xl:pb-[5vh]' => (isset($headerType) and $headerType == 'home'),
             '2xl:px-[90px]', '3xl:px-[90px]'
         ])
     >
@@ -39,7 +39,7 @@
                         'm-0 max-w-[350px] sm:max-w-[480px] font-intro font-black text-[42px] tracking-[-0.01em]',
                         'leading-none text-[42px] sm:text-[62px] lg:max-w-[70%] lg:text-[90px]' => (isset($headerType) and $headerType == 'home'),
                         'leading-none text-[44px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative'))),
-                        'leading-[1.15] text-[48px] sm:text-[68px] lg:max-w-[66%] lg:text-[96px] lg:leading-none' => (!isset($headerType) or ($headerType == 'default')),
+                        'leading-[1.15] text-[48px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px] lg:leading-none' => (!isset($headerType) or ($headerType == 'default')),
                     ])
                 >{{ $title }}</h1>
             @endif
@@ -61,7 +61,7 @@
             @if((!isset($headerType) or ($headerType != 'home')) and isset($subtitle) and !empty($subtitle))
                 <p
                     class="m-0 max-w-[350px] font-semibold text-[28px] leading-[1.2] tracking-[-0.01em]
-                            sm:max-w-[400px] sm:text-[32px] lg:max-w-[40%] lg:text-[36px] xl:max-w-[35%]"
+                            sm:max-w-[400px] sm:text-[32px] lg:max-w-[65%] lg:text-[36px]"
                 >{{ $subtitle }}</p>
             @endif
             @if(isset($phrase) and !empty($phrase))
@@ -70,7 +70,7 @@
                         'm-0 tracking-[-0.01em]',
                         'max-w-[350px] leading-[1.17] text-[24px] text-shadow sm:max-w-[400px] sm:text-[26px] lg:max-w-[40%] lg:text-[28px] lg:leading-[1.2] xl:max-w-[35%]' => (isset($headerType) and $headerType == 'home'),
                         'max-w-[325px] leading-[1.2] text-[16px] sm:max-w-[480px] sm:text-[22px] sm:text-shadow-[0_4px_24px_#000000] lg:max-w-[650px] lg:text-[28px]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative'))),
-                        'max-w-[350px] leading-[1.2] text-[20px] text-shadow sm:max-w-[480px] sm:text-shadow-unset sm:text-[24px] lg:max-w-[66%] lg:text-[28px]' => (!isset($headerType) or ($headerType == 'default')),
+                        'max-w-[350px] leading-[1.2] text-[20px] text-shadow sm:max-w-[480px] sm:text-shadow-unset sm:text-[24px] lg:max-w-[65%] lg:text-[28px]' => (!isset($headerType) or ($headerType == 'default')),
 
                     ])
                 >{{ $phrase }}</p>

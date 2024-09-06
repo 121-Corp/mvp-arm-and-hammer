@@ -1,16 +1,27 @@
 import './bootstrap';
 
-const menuMoobile = document.getElementById('mobileMenu');
+function initMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenuCloseButton = document.getElementById('mobileMenuCloseButton');
 
-function closeMenu() {
-    if (!menuMoobile.classList.contains('hidden')) {
-        menuMoobile.classList.add('hidden');
+    if (mobileMenu && mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', function(event) {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            event.stopPropagation();
+        });
+    }
+
+    if (mobileMenu && mobileMenuCloseButton) {
+        mobileMenuCloseButton.addEventListener('click', function(event) {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+            event.stopPropagation();
+        });
     }
 }
 
-// Toggle the mobile menu
-document.getElementById('mobileMenuButton').addEventListener('click', function(event) {
-    menuMoobile.classList.toggle('hidden');
-    menuMoobile.classList.add('flex');
-    event.stopPropagation();
-});
+document.addEventListener('DOMContentLoaded', () => {
+    initMobileMenu();
+}, false);

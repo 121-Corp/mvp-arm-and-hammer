@@ -11,6 +11,8 @@
 
         <!-- Styles -->
         @vite('resources/css/app.css')
+        <!-- scripts -->
+        @vite('resources/js/app.js')
     </head>
     <body class="font-kohinoor font-normal antialiased ">
         @section('sidebar')

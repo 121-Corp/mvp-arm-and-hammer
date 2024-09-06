@@ -68,10 +68,9 @@
             >
                 <div class="w-full flex-initial pb-[20px] text-center">
                     <button
-                        id="mobileMenuButton"
+                        id="mobileMenuCloseButton"
                         class="inline-flex items-center justify-center w-[40px] h-[40px] text-ah-dark-grey
                                transition-transform duration-500 will-change-transform hover:scale-110"
-                        onclick="closeMenu()"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M10.0273 10.2773L29.4728 29.7228" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
