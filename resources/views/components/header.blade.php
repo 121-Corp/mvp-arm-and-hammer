@@ -1,7 +1,7 @@
 <header
     @class([
         'flex flex-col justify-start items-stretch w-full h-[100vh] relative overflow-hidden text-white',
-        'xl:h-[42vw]' => (!isset($headerType) or ($headerType != 'home'))
+        'xl:h-[42vw] max-h-[800px]' => (!isset($headerType) or ($headerType != 'home'))
     ])
 >
     <div class="w-full h-full absolute">
@@ -18,12 +18,12 @@
     </div>
     <div
         @class([
-            'flex flex-col items-stretch  ah-container h-full pt-[8vh] pb-[10vh] relative',
-            'sm:pt-[5vh] sm:pb-[5vh] sm:justify-center',
+            'flex flex-col items-stretch ah-container h-full pt-[8vh] relative',
+            'sm:pt-[5%] sm:pb-[5%] sm:justify-center xl:justify-start xl:pt-[9%] sm:pb-[3%]',
             'justify-between gap-y-[60px] pb-[10vh]' => (!isset($headerType) or (($headerType !== 'distributors') and ($headerType != 'representative'))),
             'justify-end gap-y-[20px] pb-[15vh]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative'))),
             'sm:gap-y-[30px]' => (!isset($headerType) or ($headerType != 'home')),
-            'sm:gap-y-[40px] lg:gap-y-[55px]' => (isset($headerType) and $headerType == 'home'),
+            'sm:gap-y-[40px] lg:gap-y-[55px] xl:justify-center xl:pt-[5vh] sm:pb-[5vh]' => (isset($headerType) and $headerType == 'home'),
             '2xl:px-[90px]', '3xl:px-[90px]'
         ])
     >
