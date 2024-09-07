@@ -84,9 +84,10 @@
                         @if($headerType == 'representative')
                             name="sales-representative-search"
                         @endif
-                        action="/"
+                        action="{{ route('distributors') }}"
                         method="post"
                     >
+                        @csrf
                         <div class="w-full m-0 max-w-[350px] relative sm:mx-auto sm:max-w-[470px]">
                             <input
                                 type="search"

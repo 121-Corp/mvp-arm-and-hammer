@@ -26,7 +26,11 @@ class ContactCard extends Component
         public ?string $url = ''
     )
     {
+        $this->phoneLink = preg_replace('/[^0-9]/', '', $phone);
 
+        if (!empty($this->phoneLink)) {
+            $this->phoneLink = '+1' . $this->phoneLink;
+        }
     }
 
     /**

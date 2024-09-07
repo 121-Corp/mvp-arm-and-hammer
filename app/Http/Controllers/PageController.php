@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\Query\JoinClause;
+use App\Models\State;
+use App\Models\StateBusinessContact;
+use App\Models\BusinessContact;
 
 class PageController extends Controller
 {
@@ -30,14 +34,57 @@ class PageController extends Controller
         ]);
     }
 
-    public function distributors(){
+    public function distributors(Request $request){
+        $distributors = null;
+        $stateTitle = "";
+        $searchWord = "";
+
+        if ($request->has('state') && !empty($request->input("state"))) {
+            $validatedData = $request->validate([
+                'state' => 'regex:/^[a-zA-Z ]+$/i'
+            ]);
+
+            if (!empty($validatedData["state"])) {
+                $searchWord = $validatedData["state"];
+
+                if ($validatedData["state"] == 'united states' || $validatedData["state"] == 'us' || $validatedData["state"] == 'usa') {
+                    // get all distributors
+                    $distributors = BusinessContact::where('role', "distributor")->get();
+                    $stateTitle = "United States";
+                } else {
+                    // get state
+                    $states = State::where('name', 'like', '%'. $validatedData["state"] .'%')->get();
+
+                    if ($states->isNotEmpty()) {
+                        $stateTitle = $states->first()->name;
+
+                        // get distributors
+                        $distributors = StateBusinessContact::where('state', $states->first()->id)
+                                            ->join('business_contacts', function (JoinClause $join) {
+                                                $join->on('business_contacts.id', '=', 'state_business_contacts.contact')
+                                                     ->where('business_contacts.role', 'distributor');
+                                            })
+                                            ->get();
+                    }
+                }
+            }
+        } else {
+            // get all distributors
+            $distributors = BusinessContact::where('role', "distributor")->get();
+            $stateTitle = "United States";
+            $searchWord = "United States";
+        }
+
         return view('distributors')->with([
             "title" => "Distributors",
             "subtitle" => "",
             "phrase" => "Looking for an Arm & Hammer Animal Nutrition distributor near you?",
             "imgPathDesktop" => "images/Desk/Distributors/Banner_Distributors_2x.png",
             "imgPathMovil" => "images/Mobile/Distributors/Banner_Distributor_2x.png",
-            "headerType" => "distributors"
+            "headerType" => "distributors",
+            "distributors" => $distributors,
+            "stateTitle" => $stateTitle,
+            "searchWord" => $searchWord
         ]);
     }
 
