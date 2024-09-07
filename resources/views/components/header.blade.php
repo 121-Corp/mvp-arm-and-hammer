@@ -20,8 +20,8 @@
         @class([
             'flex flex-col items-stretch ah-container h-full pt-[8vh] relative',
             'sm:pt-[5%] sm:pb-[5%] sm:justify-center xl:justify-start',
-            'justify-between gap-y-[60px] pb-[10vh]' => (!isset($headerType) or (($headerType !== 'distributors') and ($headerType != 'representative'))),
-            'justify-end gap-y-[20px] pb-[15vh]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative'))),
+            'justify-between gap-y-[60px] pb-[10vh]' => (!isset($headerType) or (($headerType !== 'distributors') and ($headerType != 'representatives'))),
+            'justify-end gap-y-[20px] pb-[15vh]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representatives'))),
             'sm:gap-y-[30px] xl:pt-[10%] xl:pb-[3%]' => (!isset($headerType) or ($headerType != 'home')),
             'sm:gap-y-[40px] lg:gap-y-[55px] xl:justify-center xl:pt-[5vh] xl:pb-[5vh]' => (isset($headerType) and $headerType == 'home'),
             '2xl:px-[90px]', '3xl:px-[90px]'
@@ -38,7 +38,7 @@
                     @class([
                         'm-0 max-w-[350px] sm:max-w-[480px] font-intro font-black text-[42px] tracking-[-0.01em]',
                         'leading-none text-[42px] sm:text-[62px] lg:max-w-[70%] lg:text-[90px]' => (isset($headerType) and $headerType == 'home'),
-                        'leading-none text-[44px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative'))),
+                        'leading-none text-[44px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representatives'))),
                         'leading-[1.15] text-[48px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px] lg:leading-none' => (!isset($headerType) or ($headerType == 'default')),
                     ])
                 >{{ $title }}</h1>
@@ -53,8 +53,8 @@
         <div
             @class([
                 'flex flex-col justify-between items-stretch h-auto',
-                'gap-y-[40px] sm:gap-y-[45px] lg:gap-y-[55px]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative'))),
-                'gap-y-[25px]' => (!isset($headerType) or (($headerType !== 'distributors') and ($headerType != 'representative'))),
+                'gap-y-[40px] sm:gap-y-[45px] lg:gap-y-[55px]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representatives'))),
+                'gap-y-[25px]' => (!isset($headerType) or (($headerType !== 'distributors') and ($headerType != 'representatives'))),
                 'sm:items-center sm:text-center' => (!isset($headerType) or ($headerType != 'home')),
             ])
         >
@@ -69,22 +69,23 @@
                     @class([
                         'm-0 tracking-[-0.01em]',
                         'max-w-[350px] leading-[1.17] text-[24px] text-shadow sm:max-w-[400px] sm:text-[26px] lg:max-w-[40%] lg:text-[28px] lg:leading-[1.2] xl:max-w-[35%]' => (isset($headerType) and $headerType == 'home'),
-                        'max-w-[325px] leading-[1.2] text-[16px] sm:max-w-[480px] sm:text-[22px] sm:text-shadow-[0_4px_24px_#000000] lg:max-w-[650px] lg:text-[28px]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative'))),
+                        'max-w-[325px] leading-[1.2] text-[16px] sm:max-w-[480px] sm:text-[22px] sm:text-shadow-[0_4px_24px_#000000] lg:max-w-[650px] lg:text-[28px]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representatives'))),
                         'max-w-[350px] leading-[1.2] text-[20px] text-shadow sm:max-w-[480px] sm:text-shadow-unset sm:text-[24px] lg:max-w-[65%] lg:text-[28px]' => (!isset($headerType) or ($headerType == 'default')),
 
                     ])
                 >{{ $phrase }}</p>
             @endif
-            @if(isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representative')))
+            @if(isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representatives')))
                 <div class="w-full">
                     <form
                         @if($headerType == 'distributors')
                             name="distributor-search"
+                            action="{{ route('distributors') }}"
                         @endif
-                        @if($headerType == 'representative')
+                        @if($headerType == 'representatives')
                             name="sales-representative-search"
+                            action="{{ route('representatives') }}"
                         @endif
-                        action="{{ route('distributors') }}"
                         method="post"
                     >
                         @csrf
@@ -99,17 +100,17 @@
                                     'focus-visible:outline-0 focus-visible:shadow-[0_0_24px_0_rgba(255,255,255,0.5)]',
                                     'sm:pl-[20px] sm:pr-[65px] sm:bg-white sm:text-black sm:caret-black sm:placeholder:text-black sm:font-medium',
                                     'bg-ah-red' => ($headerType == 'distributors'),
-                                    'bg-ah-blue' => ($headerType == 'representative'),
+                                    'bg-ah-blue' => ($headerType == 'representatives'),
                                 ])
                                 placeholder="State"
-                                value=""
+                                value="{{ old('state', '') }}"
                                 role="textbox"
                                 contenteditable="true"
                                 aria-label="State"
                                 @if($headerType == 'distributors')
                                     aria-placeholder="Enter the name of the state where you want to find a distributor"
                                 @endif
-                                @if($headerType == 'representative')
+                                @if($headerType == 'representatives')
                                     aria-placeholder="Enter the name of the state where you want to find a sales representative"
                                 @endif
                             >
@@ -122,7 +123,7 @@
                                 @if($headerType == 'distributors')
                                     aria-label="Find Distributor"
                                 @endif
-                                @if($headerType == 'representative')
+                                @if($headerType == 'representatives')
                                     aria-label="Find Sales Representative"
                                 @endif
                                 >
@@ -134,9 +135,9 @@
                     </form>
                     <p class="mt-[12px] mb-0 mx-0 max-w-[350px] text-[16px] leading-[1.2] tracking-common sm:mx-auto sm:max-w-[480px] lg:max-w-[700px]">or Find a
                         @if($headerType == 'distributors')
-                            <a href="{{ route('representative') }}" class="ah-text-link-underline">Sales Representative</a>
+                            <a href="{{ route('representatives') }}" class="ah-text-link-underline">Sales Representative</a>
                         @endif
-                        @if($headerType == 'representative')
+                        @if($headerType == 'representatives')
                             <a href="{{ route('distributors') }}" class="ah-text-link-underline">Distributor</a>
                         @endif
                     </p>

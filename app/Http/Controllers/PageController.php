@@ -88,14 +88,57 @@ class PageController extends Controller
         ]);
     }
 
-    public function representative(){
-        return view('representative')->with([
+    public function representatives(Request $request){
+        $representatives = null;
+        $stateTitle = "";
+        $searchWord = "";
+
+        if ($request->has('state') && !empty($request->input("state"))) {
+            $validatedData = $request->validate([
+                'state' => 'regex:/^[a-zA-Z ]+$/i'
+            ]);
+
+            if (!empty($validatedData["state"])) {
+                $searchWord = $validatedData["state"];
+
+                if ($validatedData["state"] == 'united states' || $validatedData["state"] == 'us' || $validatedData["state"] == 'usa') {
+                    // get all representatives
+                    $representatives = BusinessContact::where('role', "representative")->get();
+                    $stateTitle = "United States";
+                } else {
+                    // get state
+                    $states = State::where('name', 'like', '%'. $validatedData["state"] .'%')->get();
+
+                    if ($states->isNotEmpty()) {
+                        $stateTitle = $states->first()->name;
+
+                        // get representatives
+                        $representatives = StateBusinessContact::where('state', $states->first()->id)
+                                            ->join('business_contacts', function (JoinClause $join) {
+                                                $join->on('business_contacts.id', '=', 'state_business_contacts.contact')
+                                                     ->where('business_contacts.role', 'representative');
+                                            })
+                                            ->get();
+                    }
+                }
+            }
+        } else {
+            // get all representatives
+            $representatives = BusinessContact::where('role', "representative")->get();
+            $stateTitle = "United States";
+            $searchWord = "United States";
+        }
+
+        return view('representatives')->with([
             "title" => "Sales Representative",
             "subtitle" => "",
             "phrase" => "Looking for an Arm & Hammer Animal Nutrition sales representative near you?",
             "imgPathDesktop" => "images/Desk/Sales_Representative/Banner_Sales_2x.png",
             "imgPathMovil" => "images/Mobile/Sales_Representative/Banner_Sales_Representatives_2x.png",
-            "headerType" => "representative"
+            "headerType" => "representatives",
+            "representatives" => $representatives,
+            "stateTitle" => $stateTitle,
+            "searchWord" => $searchWord
         ]);
     }
 

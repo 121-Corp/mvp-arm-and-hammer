@@ -23,7 +23,8 @@ class ContactCard extends Component
         public ?string $phone = '',
         public ?string $phoneLink = '',
         public ?string $email = '',
-        public ?string $url = ''
+        public ?string $url = '',
+        public ?string $type = ''
     )
     {
         $this->phoneLink = preg_replace('/[^0-9]/', '', $phone);

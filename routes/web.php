@@ -12,7 +12,7 @@ Route::get('/products',[PageController::class,'products'])->name('products');
 Route::match(['get', 'post'], '/distributors',[PageController::class,'distributors'])->name('distributors');
 
 
-Route::get('/representative',[PageController::class,'representative'])->name('representative');
+Route::match(['get', 'post'], '/representatives',[PageController::class,'representatives'])->name('representatives');
 
 
 Route::get('/contact',[PageController::class,'contact'])->name('contact');

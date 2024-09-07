@@ -70,7 +70,7 @@
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="{{ route('representatives') }}"
                             class="ah-text-link"
                         >Sales Representative</a>
                     </li>
