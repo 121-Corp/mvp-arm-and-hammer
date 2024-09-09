@@ -12,20 +12,18 @@
 
     {{-- SEGMENT SECTION --}}
     <div class="flex flex-col lg:flex-row w-full text-white lg:max-h-[700px] lg:h-[700px]">
-        <div class="h-[432px] lg:h-full bg-[#004697] py-[70px] px-[19px] lg:px-0 lg:py-[100px] lg:pl-[167px] lg:pr-[95px] lg:w-1/2">
+        <div class="h-[432px] lg:h-full bg-ah-blue py-[70px] px-[19px] lg:px-0 lg:py-[100px] lg:pl-[167px] lg:pr-[95px] lg:w-1/2">
             <h2 class="text-[48px] font-intro font-black leading-[100%] lg:text-[56px] lg:leading-[68px] uppercase">Segment
             </h2>
 
-            <div class="mt-[16px] flex flex-col justify-end text-start items-end h-[90%] font-kohinoor">
+            <div class="mt-[16px] flex flex-col justify-end text-start items-end h-[90%] font-kohinoor max-w-[476px] w-full">
                 <p class="font-bold text-[16px] leading-[150%] lg:text-[18px] lg:leading-[150%]">
                     All of our dairy products are focused on meeting the needs of livestock to improve overall health and
                     productivity.
                 </p>
                 <br>
-                <p class="font-normal text-[16px] leading-[150%]">
-                    Learn how each of our offerings use science-driven formulations address common agricultural challenges
-                    for
-                    dairy cattle.
+                <p class="font-normal text-[16px] leading-[150%] lg:text-[18px]">
+                    Learn how each of our offerings use science-driven formulations address common agricultural challenges for dairy cattle.
                 </p>
             </div>
         </div>
@@ -71,9 +69,8 @@
     <div class="flex flex-col lg:flex-row-reverse w-full text-ah-medium-dark-grey bg-ah-lightest-grey lg:max-h-[700px] lg:h-[700px]">
         <div class="lg:w-1/2">
             <h2 class="text-[48px] font-intro font-black leading-[100%] uppercase px-[20px] lg:px-[82px] mt-[30px] lg:mt-[91.5px]">About us</h2>
-            <div
-                class="mt-[30px] lg:mt-[110px]
-                    px-[20px] lg:pl-[82px] lg:pr-[160px] font-kohinoor text-[16px] leading-[150%] pb-[40px]">
+            <div class="mt-[30px] lg:mt-[110px] px-[20px] lg:pl-[82px]
+                    lg:pr-[160px] text-[16px] lg:text-[18px] leading-[150%] font-kohinoor pb-[40px]">
                 <p>
                     At Arm & Hammer™, we are dedicated to advancing animal nutrition through cutting-edge research and innovation.
                     <br class="lg:hidden">  <br class="lg:hidden"> Our mission is to harness the power of science to develop solutions that enhance animal health, nutrition, and productivity.</br>

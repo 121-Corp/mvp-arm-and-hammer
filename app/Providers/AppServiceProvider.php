@@ -8,6 +8,7 @@ use App\View\Components\Informative;
 use App\View\Components\ContactCard;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Schema::defaultStringLength(191);
         Blade::component('header', Header::class);
         Blade::component('informative', Informative::class);
         Blade::component('footer', Footer::class);

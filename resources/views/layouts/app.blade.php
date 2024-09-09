@@ -13,6 +13,9 @@
         @vite('resources/css/app.css')
         <!-- scripts -->
         @vite('resources/js/app.js')
+
+        {{-- @include('partials.tagmanager') --}}
+        @include('partials.cookies')
     </head>
     <body class="font-kohinoor font-normal antialiased ">
         @section('sidebar')
