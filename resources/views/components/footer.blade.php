@@ -59,9 +59,9 @@
                     </li>
                     <li class="mb-[20px]">
                         <a
-                            href="#"
+                            href="{{ route('products') }}"
                             class="ah-text-link"
-                        >Dairy Products</a>
+                        >Products</a>
                     </li>
                     <li class="mb-[20px]">
                         <a
@@ -71,9 +71,9 @@
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="{{ route('representatives') }}"
                             class="ah-text-link"
-                        >Sales Representative</a>
+                        >Sales Representatives</a>
                     </li>
                 </ul>
             </div>

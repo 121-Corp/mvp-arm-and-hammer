@@ -11,13 +11,15 @@
 
         <!-- Styles -->
         @vite('resources/css/app.css')
+        <!-- scripts -->
+        @vite('resources/js/app.js')
     </head>
     <body class="font-kohinoor font-normal antialiased ">
         @section('sidebar')
         @include('components.menu') {{-- render de menu in all pages  --}}
         @show
 
-        <div class="max-w-[1920px] w-full">
+        <div class="container max-w-[1920px] mx-auto my-0">
             @yield('content')
         </div>
 

@@ -25,29 +25,29 @@
             <div class="flex-auto basis-full px-[15px] sm:px-0 sm:text-center lg:flex-initial">
                 <p
                     class="m-0 text-[16px] leading-[1.5] text-ah-medium-dark-grey xl:text-[18px] mt-[0.25em]"
-                >Distributors near <span id="distributor-requested-state" class="uppercase">"{{ $searchWord }}"</span></p>
+                >Sales Representative near <span id="distributor-requested-state" class="uppercase">"{{ $searchWord }}"</span></p>
             </div>
         </div>
     </div>
     <div>
         <div
-            id="distributors-list"
+            id="sales-representatives-list"
             class="contact-cards-list flex flex-wrap justify-center content-stretch items-stretch"
         >
-            @if (!empty($distributors))
-                @foreach($distributors as $contact)
+            @if (!empty($representatives))
+                @foreach($representatives as $contact)
                     <div
                         class="flex-auto flex flex-col justify-start items-start h-auto py-[55px] px-[30px] relative
                                sm:items-center sm:grow-0 sm:basis-1/2 sm:max-w-[50%] lg:basis-1/3 lg:max-w-[33.3333%]
                                xl:py-[70px] xl:px-[50px] 2xl:py-[90px] 2xl:px-[75px] 3xl:py-[8%] 3xl:px-[5%] 6xl:basis-1/4 6xl:max-w-[25%]"
                     >
                         <x-contact-card
-                            :company="$contact->company"
+                            company="{{ $contact->region . ' Manager' }}"
                             :name="$contact->name"
                             :phone="$contact->phone"
                             :email="$contact->email"
                             :url="$contact->url"
-                            type="distributor"
+                            type="representative"
                         />
                         <div class="block w-full h-px absolute bottom-0 left-0 bg-ah-lighter-grey-2"></div>
                         <div class="hidden w-px h-full absolute top-0 left-0 bg-ah-lighter-grey-2 sm:block"></div>
