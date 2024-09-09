@@ -40,8 +40,9 @@
                 </li>
                 <li>
                     <a
-                        href="#"
+                        href="https://churchdwight.com/privacy-policy.aspx"
                         class="ah-text-link"
+                        target="_blank"
                     >Privacy Policy</a>
                 </li>
             </ul>
@@ -138,8 +139,9 @@
             </li>
             <li>
                 <a
-                    href="#"
+                    href="https://churchdwight.com/privacy-policy.aspx"
                     class="ah-text-link"
+                    target="_blank"
                 >Privacy Policy</a>
             </li>
         </ul>

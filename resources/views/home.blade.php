@@ -12,8 +12,7 @@
 
     {{-- SEGMENT SECTION --}}
     <div class="flex flex-col lg:flex-row w-full text-white lg:max-h-[700px] lg:h-[700px]">
-        <div
-            class="h-[432px] lg:h-auto bg-[#004697] py-[70px] px-[19px] lg:px-0 lg:py-[100px] lg:pl-[167px] lg:pr-[95px] lg:w-1/2">
+        <div class="h-[432px] lg:h-full bg-[#004697] py-[70px] px-[19px] lg:px-0 lg:py-[100px] lg:pl-[167px] lg:pr-[95px] lg:w-1/2">
             <h2 class="text-[48px] font-intro font-black leading-[100%] lg:text-[56px] lg:leading-[68px] uppercase">Segment
             </h2>
 
@@ -30,14 +29,12 @@
                 </p>
             </div>
         </div>
-
-        <div class="h-full lg:w-1/2">
-            <div class="flex flex-row text-left h-full">
-                <div class="w-[20px] h-auto bg-[#D31145]"></div>
+        <div class="lg:h-full lg:w-1/2 relative">
+            <div class="w-[20px] bg-ah-red absolute h-full"></div>
+            <div class="text-left max-h-[700px]">
                 <div class="mt-[31px] lg:mt-[95px]">
-                    <div class= "mx-[22px] flex justify-between items-center lg:mx-[67px]">
-                        <span
-                            class="text-[24px] text-ah-medium-dark-grey font-intro font-black leading-[146.54%] lg:text-[56px] lg:leading-[41.2px] uppercase">Dairy</span>
+                    <div class= "mx-[44px] flex justify-between items-center lg:mx-[67px]">
+                        <span class="text-[24px] text-ah-medium-dark-grey font-intro font-black leading-[146.54%] lg:text-[56px] lg:leading-[41.2px] uppercase">Dairy</span>
                         <a href="">
                             <span class="lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24"
@@ -59,29 +56,27 @@
                             </span>
                         </a>
                     </div>
-                    <div class="lg:mt-[41px]">
-                        <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}"
-                            class="lg:hidden g:hidden w-max-[323px] w-full max-h-[255px] h-auto" alt="">
-                        <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}"
-                            class="hidden lg:block max-w-[642px] w-full h-auto" alt="">
-                    </div>
+                </div>
+                <div class="lg:mt-[41px]">
+                    <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}"
+                        class="lg:hidden g:hidden w-max-[323px] w-full max-h-[255px] h-auto" alt="">
+                    <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}"
+                        class="hidden lg:block max-h-[522px] w-auto h-auto" alt="">
                 </div>
             </div>
         </div>
     </div>
     {{-- END SEGMENT SECTION --}}
     {{-- ABOUT  SECTION--}}
-    <div class="flex flex-col lg:flex-row-reverse w-full text-ah-medium-dark-grey bg-ah-lightest-grey">
+    <div class="flex flex-col lg:flex-row-reverse w-full text-ah-medium-dark-grey bg-ah-lightest-grey lg:max-h-[700px] lg:h-[700px]">
         <div class="lg:w-1/2">
             <h2 class="text-[48px] font-intro font-black leading-[100%] uppercase px-[20px] lg:px-[82px] mt-[30px] lg:mt-[91.5px]">About us</h2>
             <div
-                class="flex flex-col justify-end text-start items-end mt-[30px] lg:mt-[110px] px-[20px] lg:pl-[82px] lg:pr-[160px] font-kohinoor text-[16px] leading-[150%] pb-[40px]">
+                class="mt-[30px] lg:mt-[110px]
+                    px-[20px] lg:pl-[82px] lg:pr-[160px] font-kohinoor text-[16px] leading-[150%] pb-[40px]">
                 <p>
                     At Arm & Hammer™, we are dedicated to advancing animal nutrition through cutting-edge research and innovation.
-                </p>
-                <br class="lg:hidden">
-                <p>
-                    Our mission is to harness the power of science to develop solutions that enhance animal health, nutrition, and productivity.
+                    <br class="lg:hidden">  <br class="lg:hidden"> Our mission is to harness the power of science to develop solutions that enhance animal health, nutrition, and productivity.</br>
                 </p>
                 <br>
                 <p>
@@ -94,8 +89,8 @@
             </div>
         </div>
         <div class="text-left lg:w-1/2">
-            <img src="{{ asset('images/Mobile/Home/About_us_2x.png') }}" class="lg:hidden max-h-[305px] h-auto w-full" alt="">
-            <img src="{{ asset('images/Desk/Home/About_us_2x.png') }}" class="hidden lg:block w-full max-h-[700px] h-auto" alt="">
+            <img src="{{ asset('images/Mobile/Home/About_us_2x.png') }}" class="lg:hidden max-h-[305px] w-full" alt="">
+            <img src="{{ asset('images/Desk/Home/About_us_3x.png') }}" class="hidden lg:block w-full max-h-[700px] h-auto" alt="">
         </div>
     </div>
     {{-- END ABOUT SECTION --}}
