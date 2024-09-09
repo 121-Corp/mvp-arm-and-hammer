@@ -42,7 +42,7 @@
                                xl:py-[70px] xl:px-[50px] 2xl:py-[90px] 2xl:px-[75px] 3xl:py-[8%] 3xl:px-[5%] 6xl:basis-1/4 6xl:max-w-[25%]"
                     >
                         <x-contact-card
-                            :company="$contact->company"
+                            company="{{ $contact->region . ' Manager' }}"
                             :name="$contact->name"
                             :phone="$contact->phone"
                             :email="$contact->email"

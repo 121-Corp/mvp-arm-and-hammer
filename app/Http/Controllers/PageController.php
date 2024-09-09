@@ -103,7 +103,24 @@ class PageController extends Controller
 
                 if ($validatedData["state"] == 'united states' || $validatedData["state"] == 'us' || $validatedData["state"] == 'usa') {
                     // get all representatives
-                    $representatives = BusinessContact::where('role', "representative")->get();
+                    $representatives = BusinessContact::where('role', "representative")
+                                        ->join('region_business_contacts', function (JoinClause $join) {
+                                            $join->on('region_business_contacts.contact', '=', 'business_contacts.id');
+                                        })
+                                        ->join('regions', function (JoinClause $join) {
+                                            $join->on('regions.id', '=', 'region_business_contacts.region');
+                                        })
+                                        ->select([
+                                            // all fields that you want to select
+                                            "business_contacts.name as name",
+                                            "business_contacts.email as email",
+                                            "business_contacts.phone as phone",
+                                            "business_contacts.url as url",
+                                            "business_contacts.company as company",
+                                            "business_contacts.role as role",
+                                            "regions.name as region"
+                                        ])
+                                        ->get();
                     $stateTitle = "United States";
                 } else {
                     // get state
@@ -118,13 +135,46 @@ class PageController extends Controller
                                                 $join->on('business_contacts.id', '=', 'state_business_contacts.contact')
                                                      ->where('business_contacts.role', 'representative');
                                             })
+                                            ->join('region_business_contacts', function (JoinClause $join) {
+                                                $join->on('region_business_contacts.contact', '=', 'business_contacts.id');
+                                            })
+                                            ->join('regions', function (JoinClause $join) {
+                                                $join->on('regions.id', '=', 'region_business_contacts.region');
+                                            })
+                                            ->select([
+                                                // all fields that you want to select
+                                                "business_contacts.name as name",
+                                                "business_contacts.email as email",
+                                                "business_contacts.phone as phone",
+                                                "business_contacts.url as url",
+                                                "business_contacts.company as company",
+                                                "business_contacts.role as role",
+                                                "regions.name as region"
+                                            ])
                                             ->get();
                     }
                 }
             }
         } else {
             // get all representatives
-            $representatives = BusinessContact::where('role', "representative")->get();
+            $representatives = BusinessContact::where('role', "representative")
+                                ->join('region_business_contacts', function (JoinClause $join) {
+                                    $join->on('region_business_contacts.contact', '=', 'business_contacts.id');
+                                })
+                                ->join('regions', function (JoinClause $join) {
+                                    $join->on('regions.id', '=', 'region_business_contacts.region');
+                                })
+                                ->select([
+                                    // all fields that you want to select
+                                    "business_contacts.name as name",
+                                    "business_contacts.email as email",
+                                    "business_contacts.phone as phone",
+                                    "business_contacts.url as url",
+                                    "business_contacts.company as company",
+                                    "business_contacts.role as role",
+                                    "regions.name as region"
+                                ])
+                                ->get();
             $stateTitle = "United States";
             $searchWord = "United States";
         }
