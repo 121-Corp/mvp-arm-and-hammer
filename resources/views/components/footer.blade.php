@@ -82,7 +82,7 @@
                 <ul class="flex flex-wrap justify-start content-center items-center gap-[20px] m-0 list-none leading-none">
                     <li>
                         <a
-                            href="#"
+                            href="https://www.youtube.com/c/armandhammeranimalandfoodproduction"
                             class="inline-flex justify-center content-center items-center min-w-[36px]
                                 transition-opacity duration-300 ease-in-out hover:opacity-65"
                             target="_blank"
@@ -95,7 +95,7 @@
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="https://www.facebook.com/ArmAndHammerAnimalAndFoodProduction/"
                             class="inline-flex justify-center content-center items-center min-w-[36px]
                                 transition-opacity duration-300 ease-in-out hover:opacity-65"
                             target="_blank"
@@ -103,12 +103,12 @@
                             src="{{asset('images/general/Facebook.svg')}}"
                             width="15"
                             height="24"
-                            alt="YouTube"
+                            alt="Facebook"
                         /></a>
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="https://www.linkedin.com/company/armandhammeranimalnutrition/"
                             class="inline-flex justify-center content-center items-center min-w-[36px]
                                 transition-opacity duration-300 ease-in-out hover:opacity-65"
                             target="_blank"
