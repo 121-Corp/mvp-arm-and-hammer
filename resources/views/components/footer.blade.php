@@ -28,15 +28,17 @@
             <ul class="hidden m-0 list-none font-light text-[12px] leading-none lg:block">
                 <li class="mb-[20px]">
                     <a
-                        href="{{ route('home') }}"
+                        href="https://churchdwight.com/"
                         class="ah-text-link"
+                        target="_blank"
                     >Arm & Hammer Animal Nutrition ©2024 Church & Dwight Co., Inc</a>
                 </li>
                 <li class="mb-[20px]">
                     <a
-                        href="#"
+                        href="https://churchdwight.com/terms-conditions.aspx"
                         class="ah-text-link"
-                    >Cookies Management</a>
+                        target="_blank"
+                    >Terms and Conditions</a>
                 </li>
                 <li>
                     <a
@@ -108,7 +110,7 @@
                     </li>
                     <li>
                         <a
-                            href="https://www.linkedin.com/company/armandhammeranimalnutrition/"
+                            href="https://www.linkedin.com/company/armandhammeranimalandfoodproduction/"
                             class="inline-flex justify-center content-center items-center min-w-[36px]
                                 transition-opacity duration-300 ease-in-out hover:opacity-65"
                             target="_blank"
@@ -127,15 +129,17 @@
         <ul class="max-w-[180px] m-0 list-none font-light text-[12px] leading-none md:max-w-full">
             <li class="mb-[20px]">
                 <a
-                    href="{{ route('home') }}"
+                    href="https://churchdwight.com/"
                     class="ah-text-link"
+                    target="_blank"
                 >Arm & Hammer Animal Nutrition ©2024 Church & Dwight Co., Inc</a>
             </li>
             <li class="mb-[20px]">
                 <a
-                    href="#"
+                    href="https://churchdwight.com/terms-conditions.aspx"
                     class="ah-text-link"
-                >Cookies Management</a>
+                    target="_blank"
+                >Terms and Conditions</a>
             </li>
             <li>
                 <a
