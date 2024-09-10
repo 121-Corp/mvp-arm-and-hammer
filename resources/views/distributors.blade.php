@@ -32,7 +32,7 @@
     <div>
         <div
             id="distributors-list"
-            class="contact-cards-list flex flex-wrap justify-center content-stretch items-stretch"
+            class="contact-cards-list flex flex-wrap justify-start  content-stretch items-stretch"
         >
             @if (!empty($distributors))
                 @foreach($distributors as $contact)

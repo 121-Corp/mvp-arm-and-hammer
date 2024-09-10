@@ -59,7 +59,7 @@
                     <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}"
                         class="lg:hidden g:hidden w-max-[323px] w-full max-h-[255px] h-auto" alt="">
                     <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}"
-                        class="hidden lg:block max-h-[522px] w-auto h-auto" alt="">
+                        class="hidden lg:block max-h-[522px] w-auto h-auto object-center object-cover" alt="">
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
         </div>
         <div class="text-left lg:w-1/2">
             <img src="{{ asset('images/Mobile/Home/About_us_2x.png') }}" class="lg:hidden max-h-[305px] w-full" alt="">
-            <img src="{{ asset('images/Desk/Home/About_us_3x.png') }}" class="hidden lg:block w-full max-h-[700px] h-auto" alt="">
+            <img src="{{ asset('images/Desk/Home/About_us_3x.png') }}" class="hidden lg:block w-full max-h-[700px] h-auto object-center object-cover" alt="">
         </div>
     </div>
     {{-- END ABOUT SECTION --}}

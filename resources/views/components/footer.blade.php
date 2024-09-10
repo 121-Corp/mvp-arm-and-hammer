@@ -34,11 +34,9 @@
                     >Arm & Hammer Animal Nutrition ©2024 Church & Dwight Co., Inc</a>
                 </li>
                 <li class="mb-[20px]">
-                    <a
-                        href="https://churchdwight.com/terms-conditions.aspx"
-                        class="ah-text-link"
-                        target="_blank"
-                    >Terms and Conditions</a>
+                    <button
+                        class="ah-text-link optanon-toggle-display"
+                    >Cookie Management</button>
                 </li>
                 <li>
                     <a
@@ -63,7 +61,7 @@
                         <a
                             href="{{ route('products') }}"
                             class="ah-text-link"
-                        >Products</a>
+                        >Dairy Products</a>
                     </li>
                     <li class="mb-[20px]">
                         <a
@@ -135,11 +133,9 @@
                 >Arm & Hammer Animal Nutrition ©2024 Church & Dwight Co., Inc</a>
             </li>
             <li class="mb-[20px]">
-                <a
-                    href="https://churchdwight.com/terms-conditions.aspx"
-                    class="ah-text-link"
-                    target="_blank"
-                >Terms and Conditions</a>
+                <button
+                    class="ah-text-link optanon-toggle-display"
+                >Cookie Management</button>
             </li>
             <li>
                 <a

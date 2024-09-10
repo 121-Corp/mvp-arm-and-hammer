@@ -35,6 +35,7 @@ class PageController extends Controller
     }
 
     public function distributors(Request $request){
+
         $distributors = null;
         $stateTitle = "";
         $searchWord = "";
