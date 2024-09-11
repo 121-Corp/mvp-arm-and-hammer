@@ -7,6 +7,7 @@ Route::get('/', [PageController::class, 'index'] )->name('home');
 
 
 Route::get('/products',[PageController::class,'products'])->name('products');
+Route::get('/product-detail',[PageController::class,'productsDetails'])->name('product-detail');
 
 
 Route::match(['get', 'post'], '/distributors',[PageController::class,'distributors'])->name('distributors');

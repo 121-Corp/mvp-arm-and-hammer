@@ -1,4 +1,4 @@
-<div class="flex flex-col items-stretch gap-[10px] ">
+<div class="flex flex-col items-stretch gap-[10px] w-full">
     @if(isset($type) and $type == "representative")
         @if(isset($name) and !empty($name))
             <h4 class="font-bold text-[25px] leading-[1.2] text-ah-blue">{{ $name }}</h4>

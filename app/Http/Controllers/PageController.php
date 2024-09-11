@@ -7,6 +7,7 @@ use Illuminate\Database\Query\JoinClause;
 use App\Models\State;
 use App\Models\StateBusinessContact;
 use App\Models\BusinessContact;
+use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller
 {
@@ -24,18 +25,29 @@ class PageController extends Controller
     }
 
     public function products(){
+        $products = Storage::json('public/jsons/products.json');
         return view('products')->with([
             "title" => "Dairy Products",
             "subtitle" => "Innovating across the food chain.",
             "phrase" => "Our experts use science to enhance animal health and food safety, driving positive change for animals, people, and the planet.",
             "imgPathDesktop" => "images/Desk/Products/Banner_Products_2x.png",
             "imgPathMovil" => "images/Mobile/Products/Banner_Products_2x.png",
-            "headerType" => "default"
+            "headerType" => "default",
+            "products" => $products
+        ]);
+    }
+    public function productsDetails(Request $request){
+        return view('product-detail')->with([
+            "title" => "Dairy Products",
+            "subtitle" => "Innovating across the food chain.",
+            "phrase" => "Our experts use science to enhance animal health and food safety, driving positive change for animals, people, and the planet.",
+            "imgPathDesktop" => "images/Desk/Products/Banner_Products_2x.png",
+            "imgPathMovil" => "images/Mobile/Products/Banner_Products_2x.png",
+            "headerType" => "default",
         ]);
     }
 
     public function distributors(Request $request){
-
         $distributors = null;
         $stateTitle = "";
         $searchWord = "";
