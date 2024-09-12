@@ -4,7 +4,7 @@
         'xl:h-[42vw] max-h-[800px]' => (!isset($headerType) or ($headerType != 'home'))
     ])
 >
-    <div class="w-full h-full absolute">
+    <div class="w-full h-full absolute @if($headerType ==  'details') {{$product['bg-color']}}  @endif">
         <img
             src="{{ asset($imgPathMovil) }}"
             class="w-full h-full absolute object-center object-cover lg:hidden"
@@ -37,6 +37,11 @@
                 'sm:items-center sm:text-center' => (!isset($headerType) or ($headerType != 'home')),
             ])
         >
+
+            @if (isset($product) && $headerType == 'details')
+                <img src="{{asset( $product['logo_image_link'] )}}" class=" lg:max-w-[560px] lg:w-full lg:h-auto" alt="">
+            @endif
+
             @if(isset($title) and !empty($title))
                 <h1
                     @class([
@@ -55,6 +60,7 @@
                     ])
                 >{{ $title }}</h1>
             @endif
+
             @if(isset($headerType) and $headerType == 'home' and isset($subtitle) and !empty($subtitle))
                 <p
                     class="m-0 max-w-[350px] sm:max-w-[480px] font-semibold text-[26px] leading-none tracking-[-0.01em]

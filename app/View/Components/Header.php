@@ -17,7 +17,8 @@ class Header extends Component
         public ?string $phrase,
         public ?string $imgPathDesktop,
         public ?string $imgPathMovil,
-        public ?string $headerType
+        public ?string $headerType,
+        public ?array $product = NULL
     )
     { }
 
