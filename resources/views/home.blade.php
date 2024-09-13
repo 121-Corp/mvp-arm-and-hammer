@@ -32,7 +32,7 @@
                 <div class="mt-[31px] lg:mt-[95px]">
                     <div class= "mx-[44px] flex justify-between items-center lg:mx-[67px]">
                         <span class="text-[24px] text-ah-medium-dark-grey font-intro font-black leading-[146.54%] lg:text-[56px] lg:leading-[41.2px] uppercase">Dairy</span>
-                        <a href="">
+                        <a href="products">
                             <span class="lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24"
                                     fill="none">
