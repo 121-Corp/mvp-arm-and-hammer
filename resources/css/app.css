@@ -163,7 +163,10 @@
     transform: translateY(-50%);
     background-color: #dadada;
 }
-
+#advantage div>ul {
+    list-style-position: outside;
+    list-style-type: disc;
+}
 @media (min-height: 480px) {
     #mobileMenu > ul {
         row-gap: 13%;
