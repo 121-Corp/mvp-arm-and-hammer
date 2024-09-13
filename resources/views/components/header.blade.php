@@ -4,7 +4,7 @@
         'xl:h-[42vw] max-h-[800px]' => (!isset($headerType) or ($headerType != 'home'))
     ])
 >
-    <div class="w-full h-full absolute @if($headerType ==  'details') {{$product['bg-color']}}  @endif">
+    <div @class(['w-full h-full absolute'])>
         <img
             src="{{ asset($imgPathMovil) }}"
             class="w-full h-full absolute object-center object-cover lg:hidden"
@@ -27,6 +27,7 @@
             'justify-end gap-y-[20px] pb-[15vh]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representatives'))),
             'justify-center gap-y-[20px] pb-[15vh]' => (isset($headerType) and ($headerType == 'contact')),
             'sm:gap-y-[30px] xl:pt-[10%] xl:pb-[3%]' => (!isset($headerType) or ($headerType != 'home')),
+            // 'bg-white' => (!isset($headerType) or ($headerType == 'details')),
             'sm:gap-y-[40px] lg:gap-y-[55px] xl:justify-center xl:pt-[5vh] xl:pb-[5vh]' => (isset($headerType) and $headerType == 'home'),
             '2xl:px-[90px]', '3xl:px-[90px]'
         ])
@@ -39,7 +40,13 @@
         >
 
             @if (isset($product) && $headerType == 'details')
-                <img src="{{asset( $product['logo_image_link'] )}}" class=" lg:max-w-[560px] lg:w-full lg:h-auto" alt="">
+                <img src="{{asset( $product['logo_image_link'] )}}" class=" lg:max-w-[560px] max-h-[180px] lg:w-full lg:h-full" alt="">
+             <div class="text-ah-medium-dark-grey">
+                <h3 class="text-[25.76px] lg:text-[28px] font-semibold lg:font-medium leading-[120%] tracking-[-0.16px] lg:tracking-[-0.28px]">Prepare the immune system.</h3>
+                <p>
+                    With CELMANAX your cows get the benefits of multiple feed additives in one consistently high-quality formula.
+                </p>
+             </div>
             @endif
 
             @if(isset($title) and !empty($title))
@@ -175,5 +182,12 @@
                  </div>
             @endif
         </div>
+        @if($headerType == 'details')
+        <a href="#advantage" class="flex w-full h-[62px] lg:hidden items-center justify-center text-center bg-white absolute bottom-0 left-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="18" viewBox="0 0 32 18" fill="none">
+                <path d="M1 1L16 17L31 1" stroke="black"/>
+            </svg>
+        </a>
+        @endif
     </div>
 </header>
