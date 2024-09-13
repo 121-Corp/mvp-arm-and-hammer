@@ -32,13 +32,13 @@
     <div>
         <div
             id="distributors-list"
-            class="contact-cards-list flex flex-wrap justify-start  content-stretch items-stretch"
+            class="contact-cards-list flex flex-wrap justify-start content-stretch items-stretch"
         >
             @if (!empty($distributors))
                 @foreach($distributors as $contact)
                     <div
                         class="flex-auto flex flex-col justify-start items-start h-auto py-[55px] px-[30px] relative
-                               sm:items-center sm:grow-0 sm:basis-1/2 sm:max-w-[50%] lg:basis-1/3 lg:max-w-[33.3333%]
+                               sm:items-start sm:grow-0 sm:basis-1/2 sm:max-w-[50%] lg:basis-1/3 lg:max-w-[33.3333%]
                                xl:py-[70px] xl:px-[50px] 2xl:py-[90px] 2xl:px-[75px] 3xl:py-[8%] 3xl:px-[5%] 6xl:basis-1/4 6xl:max-w-[25%]"
                     >
                         <x-contact-card

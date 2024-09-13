@@ -28,6 +28,15 @@ export default {
                 'ah-lightest-grey': 'rgb(245, 245, 245)', /* #f5f5f5 */
                 'ah-light-blue': 'rgb(108, 162, 242)', /* #6ca2f2 */
                 'ah-dark-blue': 'rgb(0, 47, 135)', /* #002f87 */
+                'ah-product-a-max': 'background-color: rgb(74, 179, 128, 80%)', /*Section to bacground header of details product*/
+                'ah-product-bg-max': 'background-color: rgb(181, 117, 167, 80%)', /*Section to bacground header of details product*/
+                'ah-product-bio-chlor': 'background-color: rgb(168, 111, 114, 80%)', /*Section to bacground header of details product*/
+                'ah-product-celmanax': 'background-color: rgb(141, 108, 168, 80%)', /*Section to bacground header of details product*/
+                'ah-product-certillus': 'background-color: rgb(159, 205, 119, 80%)', /*Section to bacground header of details product*/
+                'ah-product-dcad-plus': 'background-color: rgb(229, 197, 104, 80%)', /*Section to bacground header of details product*/
+                'ah-product-fermenten': 'background-color: rgb(78, 145, 122, 80%)', /*Section to bacground header of details product*/
+                'ah-product-sodium-bicarb': 'background-color: rgb(164, 148, 151, 80%)', /*Section to bacground header of details product*/
+                'ah-product-sq-810': 'background-color: rgb(164, 148, 151, 80%)' /*Section to bacground header of details product*/
             },
             letterSpacing: {
                 'common': '-0.01em'

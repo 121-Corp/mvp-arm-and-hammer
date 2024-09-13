@@ -7,9 +7,16 @@ use Illuminate\Database\Query\JoinClause;
 use App\Models\State;
 use App\Models\StateBusinessContact;
 use App\Models\BusinessContact;
+use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller
 {
+
+    protected  $products;
+    public function __construct()
+    {
+       $this->products = collect(Storage::json('public/jsons/products.json'));
+    }
 
     public function index(){
 
@@ -24,18 +31,32 @@ class PageController extends Controller
     }
 
     public function products(){
+        // $products = Storage::json('public/jsons/products.json');
         return view('products')->with([
             "title" => "Dairy Products",
             "subtitle" => "Innovating across the food chain.",
             "phrase" => "Our experts use science to enhance animal health and food safety, driving positive change for animals, people, and the planet.",
             "imgPathDesktop" => "images/Desk/Products/Banner_Products_2x.png",
             "imgPathMovil" => "images/Mobile/Products/Banner_Products_2x.png",
-            "headerType" => "default"
+            "headerType" => "default",
+            "products" => $this->products
+        ]);
+    }
+    public function productsDetails(Request $request){
+        $product  = $this->products->where('name',$request['name'])->first();
+
+        return view('product-detail')->with([
+            "title" => "",
+            "subtitle" => "",
+            "phrase" => "",
+            "imgPathDesktop" => "images/Desk/Product-Details/banner_desktop_2x.png",
+            "imgPathMovil" => "images/Mobile/Product-Details/banner_mobile_2x.png",
+            "headerType" => "details",
+            "product" => $product
         ]);
     }
 
     public function distributors(Request $request){
-
         $distributors = null;
         $stateTitle = "";
         $searchWord = "";

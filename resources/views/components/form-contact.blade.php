@@ -52,8 +52,6 @@
     </div>
 </div>
 
-
-
 <script>
     const btnRepresentative = document.getElementById("btnSalesRepresentative");
     const btnDistributor = document.getElementById("btnDistributor");
