@@ -16,14 +16,13 @@
             <h2 class="text-[48px] font-intro font-black leading-[100%] lg:text-[56px] lg:leading-[68px] uppercase">Segment
             </h2>
 
-            <div class="mt-[16px] flex flex-col justify-end text-start items-end h-[90%] font-kohinoor max-w-[476px] w-full">
+            <div class="mt-[16px] flex flex-col justify-end text-start items-start h-[90%] font-kohinoor max-w-[476px] w-full">
                 <p class="font-bold text-[16px] leading-[150%] lg:text-[18px] lg:leading-[150%]">
-                    All of our dairy products are focused on meeting the needs of livestock to improve overall health and
-                    productivity.
+                Herd health and productivity starts here.
                 </p>
                 <br>
                 <p class="font-normal text-[16px] leading-[150%] lg:text-[18px]">
-                    Learn how each of our offerings use science-driven formulations address common agricultural challenges for dairy cattle.
+                Set your herd apart with Arm & Hammer Animal Nutrition’s comprehensive nutrition and gut health portfolio.
                 </p>
             </div>
         </div>
@@ -72,17 +71,13 @@
             <div class="mt-[30px] lg:mt-[110px] px-[20px] lg:pl-[82px]
                     lg:pr-[160px] text-[16px] lg:text-[18px] leading-[150%] font-kohinoor pb-[40px]">
                 <p>
-                    At Arm & Hammer™, we are dedicated to advancing animal nutrition through cutting-edge research and innovation.
-                    <br class="lg:hidden">  <br class="lg:hidden"> Our mission is to harness the power of science to develop solutions that enhance animal health, nutrition, and productivity.</br>
+                At Arm & Hammer, we know producers need products that work as hard as you do. It’s why we use cutting-edge research and innovation to deliver efficiency- and profitability-enhancing nutrition solutions. 
                 </p>
                 <br>
                 <p>
-                    With a deep commitment to sustainability and global impact, we integrate proven technologies to address agricultural challenges and drive positive change in animal production worldwide.
+                We harness the power of science to drive positive change in global animal production, for greater sustainability across the world – and on your farm. Local results for global impact. 
                 </p>
-                <br class="lg:hidden">
-                <p>
-                    As your trusted partner, we are dedicated to providing continuous solutions to increase the efficiency and profitability of your business.
-                </p>
+                
             </div>
         </div>
         <div class="text-left lg:w-1/2">
