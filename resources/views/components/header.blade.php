@@ -128,7 +128,7 @@
                     >
                         @csrf
                         <div class="w-full m-0 max-w-[350px] relative sm:mx-auto sm:max-w-[470px]">
-                            <input
+                            <input style="color:black;"
                                 type="search"
                                 name="state"
                                 @class([
@@ -136,7 +136,7 @@
                                     'border border-solid border-white text-white caret-white placeholder:text-white',
                                     'shadow-[0_0_24px_0_rgba(255,255,255,0)] transition-shadow duration-500',
                                     'focus-visible:outline-0 focus-visible:shadow-[0_0_24px_0_rgba(255,255,255,0.5)]',
-                                    'sm:pl-[20px] sm:pr-[65px] sm:bg-white sm:text-black sm:caret-black sm:placeholder:text-black sm:font-medium',
+                                    'pl-[20px] sm:pr-[65px] bg-white text-black caret-black placeholder:text-black font-medium',
                                     'bg-ah-red' => ($headerType == 'distributors'),
                                     'bg-ah-blue' => ($headerType == 'representatives'),
                                 ])
@@ -155,7 +155,7 @@
                             <button
                                 type="submit"
                                 class="inline-flex justify-center items-center w-[24px] h-[24px] absolute top-1/2 right-[30px] translate-y-[-50%] text-white
-                                       transition-transform duration-500 will-change-transform hover:scale-105 sm:text-black"
+                                       transition-transform duration-500 will-change-transform hover:scale-105 text-black"
                                 value=""
                                 role="button"
                                 @if($headerType == 'distributors')
@@ -166,7 +166,7 @@
                                 @endif
                                 >
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 5.13401 5.13401 2 9 2C12.866 2 16 5.13401 16 9C16 10.8873 15.2531 12.6002 14.0388 13.8591C14.0056 13.8848 13.9737 13.9129 13.9433 13.9433C13.9129 13.9737 13.8848 14.0056 13.8591 14.0388C12.6002 15.2531 10.8873 16 9 16C5.13401 16 2 12.866 2 9ZM14.6177 16.0319C13.078 17.2635 11.125 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 11.125 17.2635 13.078 16.0319 14.6177L19.7075 18.2933C20.098 18.6838 20.098 19.317 19.7075 19.7075C19.317 20.098 18.6838 20.098 18.2933 19.7075L14.6177 16.0319Z" fill="currentColor"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 5.13401 5.13401 2 9 2C12.866 2 16 5.13401 16 9C16 10.8873 15.2531 12.6002 14.0388 13.8591C14.0056 13.8848 13.9737 13.9129 13.9433 13.9433C13.9129 13.9737 13.8848 14.0056 13.8591 14.0388C12.6002 15.2531 10.8873 16 9 16C5.13401 16 2 12.866 2 9ZM14.6177 16.0319C13.078 17.2635 11.125 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 11.125 17.2635 13.078 16.0319 14.6177L19.7075 18.2933C20.098 18.6838 20.098 19.317 19.7075 19.7075C19.317 20.098 18.6838 20.098 18.2933 19.7075L14.6177 16.0319Z" fill="black"/>
                                     </svg>
                                 </button>
                         </div>
