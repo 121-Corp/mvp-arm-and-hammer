@@ -1,10 +1,21 @@
 <header
     @class([
         'flex flex-col justify-start items-stretch w-full h-[100vh] relative overflow-hidden text-white',
-        'xl:h-[42vw] max-h-[800px]' => (!isset($headerType) or ($headerType != 'home'))
+        'xl:h-[52vw] max-h-[800px]' => (!isset($headerType) or ($headerType != 'home'))
     ])
 >
-    <div @class(['w-full h-full absolute'])>
+    <div @class(['w-full h-full absolute',
+                'bg-ah-product-a-max' => (($headerType == 'details') and ($product['color'] == 'ah-product-a-max')),
+                'bg-ah-product-bg-max' => (($headerType == 'details') and ($product['color'] == 'ah-product-bg-max')),
+                'bg-ah-product-bio-chlor' => (($headerType == 'details') and ($product['color'] == 'ah-product-bio-chlor')),
+                'bg-ah-product-celmanax' => (($headerType == 'details') and ($product['color'] == 'ah-product-celmanax')),
+                'bg-ah-product-certillus' => (($headerType == 'details') and ($product['color'] == 'ah-product-certillus')),
+                'bg-ah-product-dcad-plus' => (($headerType == 'details') and ($product['color'] == 'ah-product-dcad-plus')),
+                'bg-ah-product-fermenten' => (($headerType == 'details') and ($product['color'] == 'ah-product-fermenten')),
+                'bg-ah-product-sodium-bicarb' => (($headerType == 'details') and ($product['color'] == 'ah-product-sodium-bicarb')),
+                'bg-ah-product-sq-810' => (($headerType == 'details') and ($product['color'] == 'ah-product-sq-810'))
+                ])
+        >
         <img
             src="{{ asset($imgPathMovil) }}"
             class="w-full h-full absolute object-center object-cover lg:hidden"
@@ -22,12 +33,12 @@
             'sm:pt-[5%] sm:pb-[5%] sm:justify-center xl:justify-start',
             'justify-between gap-y-[60px] pb-[10vh]' => (
                 !isset($headerType) or
-                ( ($headerType !== 'distributors') and ($headerType != 'representatives') and ($headerType != 'contact') )
+                ( ($headerType !== 'distributors') and ($headerType != 'representatives') and ($headerType != 'contact') and ($headerType != 'details') )
             ),
             'justify-end gap-y-[20px] pb-[15vh]' => (isset($headerType) and (($headerType == 'distributors') or ($headerType == 'representatives'))),
             'justify-center gap-y-[20px] pb-[15vh]' => (isset($headerType) and ($headerType == 'contact')),
             'sm:gap-y-[30px] xl:pt-[10%] xl:pb-[3%]' => (!isset($headerType) or ($headerType != 'home')),
-            // 'bg-white' => (!isset($headerType) or ($headerType == 'details')),
+            'justify-center gap-y-[60px] pb-[10vh]' => (($headerType == 'details')),
             'sm:gap-y-[40px] lg:gap-y-[55px] xl:justify-center xl:pt-[5vh] xl:pb-[5vh]' => (isset($headerType) and $headerType == 'home'),
             '2xl:px-[90px]', '3xl:px-[90px]'
         ])
@@ -38,14 +49,12 @@
                 'sm:items-center sm:text-center' => (!isset($headerType) or ($headerType != 'home')),
             ])
         >
-
+            {{-- section to products details --}}
             @if (isset($product) && $headerType == 'details')
-                <img src="{{asset( $product['logo_image_link'] )}}" class=" lg:max-w-[560px] max-h-[180px] lg:w-full lg:h-full" alt="">
-             <div class="text-ah-medium-dark-grey">
-                <h3 class="text-[25.76px] lg:text-[28px] font-semibold lg:font-medium leading-[120%] tracking-[-0.16px] lg:tracking-[-0.28px]">Prepare the immune system.</h3>
-                <p>
-                    With CELMANAX your cows get the benefits of multiple feed additives in one consistently high-quality formula.
-                </p>
+            <div class="flex flex-col justify-center text-ah-medium-dark-grey text-center
+                        py-[50px] px-[33px] lg:mt-0 lg:w-10/12 bg-white mx-auto">
+               <img src="{{asset( $product['logo_image_link'] )}}" class=" lg:max-w-[560px] max-h-[180px] lg:w-full lg:h-full mb-[20px] lg:mx-auto" alt="">
+                {!! $product['about_fold'] !!}
              </div>
             @endif
 
