@@ -96,3 +96,24 @@
         </nav>
     </div>
 </header>
+<script>
+        let lastScrollTop = 0;
+const menu = document.getElementById("mainHeader");
+
+window.addEventListener("scroll", function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // El usuario está haciendo scroll hacia abajo
+        menu.style.position = "relative"; // Quitar el fixed
+        menu.style.top = "0";
+    } else {
+        // El usuario está haciendo scroll hacia arriba
+        menu.style.position = "fixed"; // Fijar el menú
+        menu.style.top = "0";
+    }
+
+    lastScrollTop = scrollTop;
+});
+
+    </script>
