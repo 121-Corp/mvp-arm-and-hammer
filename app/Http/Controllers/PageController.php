@@ -22,8 +22,8 @@ class PageController extends Controller
 
         return view('home')->with([
             "title" => "YOUR NUTRITION POWERHOUSE",
-            "subtitle" => "Solutions for a more secure food system.",
-            "phrase" => "Cattle feed ingredients that optimize dairy cow health.",
+            "subtitle" => "Set your dairy apart with feed ingredients that optimize the heath of your herd.",
+            "phrase" => "",
             "imgPathDesktop" => "images/Desk/Home/Banner_Home_2x.png",
             "imgPathMovil" => "images/Mobile/Home/Banner_Home_2x.png",
             "headerType" => "home"

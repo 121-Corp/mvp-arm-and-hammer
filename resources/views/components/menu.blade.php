@@ -96,3 +96,30 @@
         </nav>
     </div>
 </header>
+<script>
+    let lastScrollTop = 0;
+    const menu = document.getElementById("mainHeader");
+    const menuPlaceholder = document.createElement('div');
+    menuPlaceholder.style.height = menu.offsetHeight + 'px'; // Asigna la altura del menú al placeholder
+
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Usuario hace scroll hacia abajo
+            menu.style.position = "relative";
+            if (menu.parentNode.contains(menuPlaceholder)) {
+                menu.parentNode.removeChild(menuPlaceholder); // Quitar el placeholder
+            }
+        } else {
+            // Usuario hace scroll hacia arriba
+            menu.style.position = "fixed";
+            menu.style.top = "0";
+            if (!menu.parentNode.contains(menuPlaceholder)) {
+                menu.parentNode.insertBefore(menuPlaceholder, menu); // Agregar el placeholder
+            }
+        }
+
+        lastScrollTop = scrollTop;
+    });
+</script>
