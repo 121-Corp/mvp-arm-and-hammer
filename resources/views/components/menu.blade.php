@@ -33,6 +33,7 @@
                             class="ah-text-link px-[5px] pb-[7px] pt-[5px]"
                             href="{{ route('products') }}"
                         >Products</a>
+                        
                     </li>
                     <li class="basis-[calc(100%/3-156px/3)] text-center md:flex md:flex-col md:h-full md:items-center md:justify-center">
                         <a
