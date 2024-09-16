@@ -142,7 +142,7 @@
                                 name="state"
                                 @class([
                                     'w-full m-0 pt-[18px] pb-[22px] pl-[30px] pr-[75px] relative font-light text-[18px] leading-[1.67] tracking-[-0.01em]',
-                                    'border border-solid border-white text-white caret-white placeholder:text-white',
+                                    'border border-solid border-white text-white caret-white placeholder:text-black',
                                     'shadow-[0_0_24px_0_rgba(255,255,255,0)] transition-shadow duration-500',
                                     'focus-visible:outline-0 focus-visible:shadow-[0_0_24px_0_rgba(255,255,255,0.5)]',
                                     'pl-[20px] sm:pr-[65px] bg-white text-black caret-black placeholder:text-black font-medium',
