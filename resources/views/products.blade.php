@@ -43,13 +43,6 @@
 .sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
 /* Fade in the currently hovered item */
 
-
-
-
-
-
-
-
 .sibling-fade {
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +59,7 @@
   text-decoration: none;
 }
 
-/**/
+/*Termina la animación*/
 
 
 </style>
