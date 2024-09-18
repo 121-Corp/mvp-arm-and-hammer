@@ -26,7 +26,7 @@
 
         <span class="text-[18px] font-semibold leading-[150%] mr-[100px]">
                      @if($product['name'] === 'CERTILLUS')
-                          Sell Sheets      
+                          Sell Sheets
                           <br> <br>
                         @endif</span>
 
@@ -38,11 +38,16 @@
                      @if($product['name'] === 'CERTILLUS')
                             {{$file['name']}}
                        @else
-                       Sell Sheet      
+                       Sell Sheet
                         @endif</span>
                 <img src="{{asset('images/general/arrow-right.svg')}}" class="ml-auto">
             </a>
         @endforeach
+        <div class="wrap">
+            <a href="#">Magic Border</a>
+            <a href="#">Magic Border 2</a>
+            <a href="#">Magic Border 3</a>
+            </div>
         </div>
     </div>
 </div>

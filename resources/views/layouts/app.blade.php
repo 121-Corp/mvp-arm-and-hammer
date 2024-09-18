@@ -30,6 +30,7 @@
 
         <!-- Styles -->
         @vite('resources/css/app.css')
+        @vite('resources/scss/app.scss')
         <!-- scripts -->
         @vite('resources/js/app.js')
 

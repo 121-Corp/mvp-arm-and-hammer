@@ -7,6 +7,7 @@ use Illuminate\Database\Query\JoinClause;
 use App\Models\State;
 use App\Models\StateBusinessContact;
 use App\Models\BusinessContact;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller
@@ -31,7 +32,6 @@ class PageController extends Controller
     }
 
     public function products(){
-        // $products = Storage::json('public/jsons/products.json');
         return view('products')->with([
             "title" => "Dairy Products",
             "subtitle" => "Innovating across the food chain.",
