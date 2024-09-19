@@ -28,7 +28,8 @@
         </div>
         <div class="lg:h-full lg:w-1/2 relative">
             <div class="w-[20px] bg-ah-red absolute h-full"></div>
-            <div class="text-left max-h-[700px]">
+            <div class="text-left max-h-[700px] hover-shine">
+                <figure>
                 <div class="mt-[31px] lg:mt-[95px]">
                     <div class= "mx-[44px] flex justify-between items-center lg:mx-[67px]">
                     <a href="{{route('products')}}"> <span class="text-[24px] text-ah-medium-dark-grey font-intro font-black leading-[146.54%] lg:text-[56px] lg:leading-[41.2px] uppercase">Dairy</span></a>
@@ -55,15 +56,14 @@
                     </div>
                 </div>
                 <div class="lg:mt-[41px] ml-5 hover-shine">
-                    <figure>
                         <a href="{{route('products')}}">
                             <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}"
                                 class="lg:hidden g:hidden w-max-[323px] w-full max-h-[255px] h-auto" alt="">
                             <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}"
                                 class="hidden lg:block max-h-[522px] w-auto h-auto object-center object-cover" alt="">
                         </a>
-                    </figure>
-                </div>
+                    </div>
+                </figure>
             </div>
         </div>
     </div>

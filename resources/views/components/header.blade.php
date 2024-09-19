@@ -80,7 +80,7 @@
             @if(isset($headerType) and $headerType == 'home' and isset($subtitle) and !empty($subtitle))
                 <p
                     class="m-0 max-w-[350px] sm:max-w-[480px] font-semibold text-[26px] leading-none tracking-[-0.01em]
-                           sm:text-[30px] lg:max-w-[70%] lg:text-[36px]"
+                           sm:text-[30px] lg:max-w-[70%] lg:text-[36px] hidden lg:block"
                 >{{ $subtitle }}</p>
             @endif
         </div>
@@ -95,10 +95,9 @@
                 'sm:items-center sm:text-center' => (!isset($headerType) or ($headerType != 'home')),
             ])
         >
-            @if((!isset($headerType) or ($headerType != 'home')) and isset($subtitle) and !empty($subtitle))
-                <p
-                    class="m-0 max-w-[350px] font-semibold text-[28px] leading-[1.2] tracking-[-0.01em]
-                            sm:max-w-[400px] sm:text-[32px] lg:max-w-[65%] lg:text-[36px]"
+            @if(isset($headerType) and isset($subtitle) and !empty($subtitle))
+                <p @class(['m-0 max-w-[350px] font-semibold text-[28px] leading-[1.2] tracking-[-0.01em]
+                            sm:max-w-[400px] sm:text-[32px] lg:max-w-[65%] lg:text-[36px]', 'lg:hidden' => ($headerType == 'home')])
                 >{{ $subtitle }}</p>
             @endif
             @if(isset($phrase) and !empty($phrase))

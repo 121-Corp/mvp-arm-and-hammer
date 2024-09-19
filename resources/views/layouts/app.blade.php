@@ -39,10 +39,12 @@
     </head>
     <body class="font-kohinoor font-normal antialiased ">
         @section('sidebar')
-        @include('components.menu') {{-- render de menu in all pages  --}}
+        {{-- render de menu in all pages  --}}
+        @include('components.menu')
         @show
 
         <div class="container max-w-[1920px] mx-auto my-0">
+
             @yield('content')
         </div>
 
