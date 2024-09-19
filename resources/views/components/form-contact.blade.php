@@ -61,6 +61,8 @@
 <script>
     const btnRepresentative = document.getElementById("btnSalesRepresentative");
     const btnDistributor = document.getElementById("btnDistributor");
+    const distributorInput = document.getElementById("distributor");
+    const salesRepresentativeInput = document.getElementById("salesRepresentative");
 
     const sendData =(action,state)=>{
         const form = document.getElementById("frmGetInTouch");
@@ -70,14 +72,26 @@
     };
 
     btnRepresentative.addEventListener('click',function(){
-       let state= document.getElementById("salesRepresentative").value;
+       let state= salesRepresentativeInput.value;
         sendData("{{route('representatives')}}",state);
     });
+    salesRepresentativeInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' && salesRepresentativeInput.value != "") {
+        let state= salesRepresentativeInput.value;
+        sendData( "{{route('distributors')}}",state);
+      }
+    });
+
     btnDistributor.addEventListener('click',function(){
-        let state= document.getElementById("distributor").value;
+        let state= distributorInput.value;
         sendData( "{{route('distributors')}}",state);
     });
 
-
+    distributorInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' && distributorInput.value != "") {
+        let state= distributorInput.value;
+        sendData( "{{route('distributors')}}",state);
+      }
+    });
 
 </script>

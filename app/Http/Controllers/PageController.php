@@ -27,7 +27,8 @@ class PageController extends Controller
             "phrase" => "",
             "imgPathDesktop" => "images/Desk/Home/Banner_Home_2x.png",
             "imgPathMovil" => "images/Mobile/Home/Banner_Home_2x.png",
-            "headerType" => "home"
+            "headerType" => "home",
+            "products" => $this->products
         ]);
     }
 

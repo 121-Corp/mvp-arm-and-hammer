@@ -191,3 +191,71 @@ ul li ul li {
     width: 100%;
 }
 </style>
+<script>
+    let lastScrollTop = 0;
+    const menu = document.getElementById("mainHeader");
+    const menuPlaceholder = document.createElement('div');
+    menuPlaceholder.style.height = menu.offsetHeight + 'px'; // Asigna la altura del menú al placeholder
+
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Usuario hace scroll hacia abajo
+            menu.style.position = "relative";
+            if (menu.parentNode.contains(menuPlaceholder)) {
+                menu.parentNode.removeChild(menuPlaceholder); // Quitar el placeholder
+            }
+        } else {
+            // Usuario hace scroll hacia arriba
+            menu.style.position = "fixed";
+            menu.style.top = "0";
+            if (!menu.parentNode.contains(menuPlaceholder)) {
+                menu.parentNode.insertBefore(menuPlaceholder, menu); // Agregar el placeholder
+            }
+        }
+
+        lastScrollTop = scrollTop;
+    });
+</script>
+<script>
+   const menuProducts = document.getElementById('menuProducts');
+   const btmMenu = document.getElementById('btnMenuProducts');
+//    const menuMoobile = document.getElementById('mobileMenu');
+//    const background = document.getElementById('backgraound');
+
+//    backgraound.addEventListener('touchstart', (e) => {
+//        closeMenu();
+//    });
+
+    document.body.addEventListener('click', function(event) {
+        closeMenu();
+    });
+
+    btmMenu.addEventListener('click', function(event) {
+        menuProducts.classList.toggle('hidden');
+        menuProducts.classList.add('flex');
+        menuProducts.classList.add('flex-col');
+        menuProducts.classList.add('justify-end');
+
+        event.stopPropagation();
+    });
+
+   function closeMenu() {
+       if( !menuProducts.classList.contains('hidden') ){
+        menuProducts.classList.add('hidden');
+        menuProducts.classList.toggle('flex');
+        menuProducts.classList.toggle('flex-col');
+        menuProducts.classList.toggle('justify-end');
+       }
+   }
+
+
+   // Toggle the mobile menu
+   document.getElementById('mobileMenuButton').addEventListener('click', function(event) {
+    //    background.classList.toggle('hidden');
+    //    menuMoobile.classList.toggle('hidden');
+    //    menuMoobile.classList.add('flex');
+       event.stopPropagation();
+   });
+</script>
