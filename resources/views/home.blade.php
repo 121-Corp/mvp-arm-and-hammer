@@ -31,8 +31,8 @@
             <div class="text-left max-h-[700px]">
                 <div class="mt-[31px] lg:mt-[95px]">
                     <div class= "mx-[44px] flex justify-between items-center lg:mx-[67px]">
-                    <a href="products"> <span class="text-[24px] text-ah-medium-dark-grey font-intro font-black leading-[146.54%] lg:text-[56px] lg:leading-[41.2px] uppercase">Dairy</span></a>
-                        <a href="products">
+                    <a href="{{route('products')}}"> <span class="text-[24px] text-ah-medium-dark-grey font-intro font-black leading-[146.54%] lg:text-[56px] lg:leading-[41.2px] uppercase">Dairy</span></a>
+                        <a href="{{route('products')}}">
                             <span class="lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24"
                                     fill="none">
@@ -42,7 +42,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </span>
-                            <span class=" hidden lg:block">
+                            <span class="hidden lg:block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="98" height="42" viewBox="0 0 98 42"
                                     fill="none">
                                     <path d="M8.44824 21L89.5517 21" stroke="#58585A" stroke-width="2"
@@ -54,11 +54,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="lg:mt-[41px]">
-                    <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}"
-                        class="lg:hidden g:hidden w-max-[323px] w-full max-h-[255px] h-auto" alt="">
-                    <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}"
-                        class="hidden lg:block max-h-[522px] w-auto h-auto object-center object-cover" alt="">
+                <div class="lg:mt-[41px] ml-5 hover-shine">
+                    <figure>
+                        <a href="{{route('products')}}">
+                            <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}"
+                                class="lg:hidden g:hidden w-max-[323px] w-full max-h-[255px] h-auto" alt="">
+                            <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}"
+                                class="hidden lg:block max-h-[522px] w-auto h-auto object-center object-cover" alt="">
+                        </a>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -71,13 +75,13 @@
             <div class="mt-[30px] lg:mt-[110px] px-[20px] lg:pl-[82px]
                     lg:pr-[160px] text-[16px] lg:text-[18px] leading-[150%] font-kohinoor pb-[40px]">
                 <p>
-                At Arm & Hammer, we know producers need products that work as hard as you do. It’s why we use cutting-edge research and innovation to deliver efficiency- and profitability-enhancing nutrition solutions. 
+                At Arm & Hammer, we know producers need products that work as hard as you do. It’s why we use cutting-edge research and innovation to deliver efficiency- and profitability-enhancing nutrition solutions.
                 </p>
                 <br>
                 <p>
-                We harness the power of science to drive positive change in global animal production, for greater sustainability across the world – and on your farm. Local results for global impact. 
+                We harness the power of science to drive positive change in global animal production, for greater sustainability across the world – and on your farm. Local results for global impact.
                 </p>
-                
+
             </div>
         </div>
         <div class="text-left lg:w-1/2">

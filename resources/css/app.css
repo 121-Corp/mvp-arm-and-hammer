@@ -232,3 +232,88 @@
         background-color: #efefef;
     }
 }
+
+
+/* Animation Products pages logo */
+    /* SIBLING FADE: fade out siblings around a hovered item */
+
+    .sibling-fade { visibility: hidden; }
+    /* Prevents :hover from triggering in the gaps between items */
+
+    .sibling-fade > * { visibility: visible; }
+    /* Brings the child items back in, even though the parent is `hidden` */
+
+    .sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+    /* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+    .sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }
+    /* Fade out all items when the parent is hovered */
+
+    .sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+    /* Fade in the currently hovered item */
+
+    .sibling-fade {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sibling-fade > * {
+      background: white;
+      padding: 1em;
+      flex: auto;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
+    /*Termina la animación*/
+
+
+
+  /* Shine animation Dairy section */
+
+ /* Shine */
+.hover-shine figure {
+	position: relative;
+    overflow-x: hidden;
+}
+.hover-shine figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+    display: none;
+}
+.hover-shine figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+    display: block;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/* Finish shine animation  */
+
+
+/* contact form focus */
+input#salesRepresentative:focus ~ #btnSalesRepresentative {
+    color: black;
+}
+input#distributor:focus ~ button#btnDistributor{
+    color: black;
+}
