@@ -49,8 +49,8 @@
         </div>
         <div class="flex flex-nowrap justify-start items-stretch gap-x-[15px] lg:flex-[0_1_50%] lg:pl-[20px] xl:pl-[35px] 2xl:pl-[55px] 3xl:pl-[84px]">
             <div class="flex-[0_1_50%]">
-                <h4 class="mb-[20px] font-semibold text-[12px] leading-[1.42] tracking-[0.08em] uppercase underline decoration-1 underline-offset-1">Sitemap</h4>
-                <ul class="m-0 list-none font-semibold text-[12px] leading-[1.42] tracking-[0.08em] uppercase">
+                <h4 class="mb-[20px] font-black text-[14px] leading-[1.42] tracking-[0.08em] uppercase decoration-1 underline-offset-1">Sitemap</h4>
+                <ul class="m-0 list-none font-medium text-[12px] leading-[1.42] tracking-[0.08em] uppercase">
                     <li class="mb-[20px]">
                         <a
                             href="{{ route('home') }}"
@@ -78,7 +78,7 @@
                 </ul>
             </div>
             <div class="flex-[0_1_50%]">
-                <h4 class="mb-[55px] font-semibold text-[12px] leading-[1.42] tracking-[0.08em] uppercase underline decoration-1 underline-offset-1">Social Media</h4>
+                <h4 class="mb-[55px] font-black text-[14px] leading-[1.42] tracking-[0.08em] uppercase decoration-1 underline-offset-1">Social Media</h4>
                 <ul class="flex flex-wrap justify-start content-center items-center gap-[20px] m-0 list-none leading-none">
                     <li>
                         <a

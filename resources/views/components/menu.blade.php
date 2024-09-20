@@ -44,6 +44,13 @@
                                 </a>
                             </li>
                             @endforeach
+                            <li class="border-b">
+                                <a class="text-ah-darkest-grey text-center no-underline" href="{{route('products')}}">
+                                    <div class="w-full">
+                                        VIEW ALL
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                         {{-- <div id="menuProducts"
                             class="hidden w-full h-auto absolute top-[100%] left-[-1px] z-[1] bg-[#ffffff] ">
