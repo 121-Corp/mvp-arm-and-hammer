@@ -23,7 +23,7 @@ class PageController extends Controller
 
         return view('home')->with([
             "title" => "YOUR NUTRITION POWERHOUSE",
-            "subtitle" => "Set your dairy apart with feed ingredients that optimize the heatlh of your herd.",
+            "subtitle" => "Set your dairy apart with feed ingredients that optimize the health of your herd.",
             "phrase" => "",
             "imgPathDesktop" => "images/Desk/Home/Banner_Home_2x.png",
             "imgPathMovil" => "images/Mobile/Home/Banner_Home_2x.png",
