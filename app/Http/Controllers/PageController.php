@@ -23,7 +23,7 @@ class PageController extends Controller
 
         return view('home')->with([
             "title" => "YOUR NUTRITION POWERHOUSE",
-            "subtitle" => "Set your dairy apart with feed ingredients that optimize the heath of your herd.",
+            "subtitle" => "Set your dairy apart with feed ingredients that optimize the health of your herd.",
             "phrase" => "",
             "imgPathDesktop" => "images/Desk/Home/Banner_Home_2x.png",
             "imgPathMovil" => "images/Mobile/Home/Banner_Home_2x.png",
@@ -35,7 +35,7 @@ class PageController extends Controller
     public function products(){
         return view('products')->with([
             "title" => "Dairy Products",
-            "subtitle" => "Innovating across the food chain.",
+            "subtitle" => "",
             "phrase" => "Build cow health, production and resiliency with proven nutrition supplements and gut health solutions.",
             "imgPathDesktop" => "images/Desk/Products/Banner_Products_2x.png",
             "imgPathMovil" => "images/Mobile/Products/Banner_Products_2x.png",

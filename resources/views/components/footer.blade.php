@@ -27,24 +27,26 @@
             </div>
             <ul class="hidden m-0 list-none font-light text-[12px] leading-none lg:block">
                 <li class="mb-[20px]">
-                    <a
-                        href="https://churchdwight.com/"
-                        class="ah-text-link"
-                        target="_blank"
-                    >Arm & Hammer Animal Nutrition ©2024 Church & Dwight Co., Inc</a>
-                </li>
-                <li class="mb-[20px]">
-                    <button
+                <button
                         class="ah-text-link optanon-toggle-display"
                     >Cookie Management</button>
                 </li>
-                <li>
-                    <a
+                <li class="mb-[20px]">
+                <a
                         href="https://churchdwight.com/privacy-policy.aspx"
                         class="ah-text-link"
                         target="_blank"
                     >Privacy Policy</a>
                 </li>
+                <li>
+                  
+                    <a
+                        href="https://churchdwight.com/"
+                        class="ah-text-link"
+                        target="_blank"
+                    >©2024 Church & Dwight Co., Inc</a>
+                </li>
+               
             </ul>
         </div>
         <div class="flex flex-nowrap justify-start items-stretch gap-x-[15px] lg:flex-[0_1_50%] lg:pl-[20px] xl:pl-[35px] 2xl:pl-[55px] 3xl:pl-[84px]">

@@ -10,7 +10,8 @@
 
 @section('content')
     <x-header :$title :$subtitle :$phrase :$imgPathDesktop :$imgPathMovil :$headerType :$product />
-
+     {!! $product['above_fold'] !!}
+    </div>
     <div class="bg-white flex flex-col lg:flex-row text-ah-medium-dark-grey" id="advantage">
         <div class="lg:w-1/2 py-[70px] px-[20px] lg:py-[63px] lg:pl-[163px] lg:pr-[97px]">
             <h2 class="text-[43px] lg:text-[46px] font-black leading-[120%] mb-[50px] uppercase">The
