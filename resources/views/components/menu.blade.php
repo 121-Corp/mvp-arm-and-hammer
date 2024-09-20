@@ -44,6 +44,13 @@
                                 </a>
                             </li>
                             @endforeach
+                            <li class="border-b">
+                                <a class="text-ah-darkest-grey text-center no-underline" href="/products">
+                                    <div class="w-full">
+                                    All products
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                         {{-- <div id="menuProducts"
                             class="hidden w-full h-auto absolute top-[100%] left-[-1px] z-[1] bg-[#ffffff] ">
@@ -119,6 +126,13 @@
                                 </a>
                             </li>
                             @endforeach
+                            <li class="border-b">
+                                <a class="text-ah-darkest-grey text-center no-underline" href="/products">
+                                    <div class="w-full">
+                                    All products
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li><a class="ah-text-link" href="{{ route('contact') }}">Contact</a></li>
@@ -191,3 +205,27 @@ ul li ul li {
     width: 100%;
 }
 </style>
+<script>
+     let lastScrollTop = 0;
+    const menu = document.getElementById("mainHeader");
+    const menuPlaceholder = document.createElement('div');
+    menuPlaceholder.style.height = menu.offsetHeight + 'px'; // Asigna la altura del menú al placeholder
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Usuario hace scroll hacia abajo
+            menu.style.position = "relative";
+            if (menu.parentNode.contains(menuPlaceholder)) {
+                menu.parentNode.removeChild(menuPlaceholder); // Quitar el placeholder
+            }
+        } else {
+            // Usuario hace scroll hacia arriba
+            menu.style.position = "fixed";
+            menu.style.top = "0";
+            if (!menu.parentNode.contains(menuPlaceholder)) {
+                menu.parentNode.insertBefore(menuPlaceholder, menu); // Agregar el placeholder
+            }
+        }
+        lastScrollTop = scrollTop;
+    });
+    </script>
