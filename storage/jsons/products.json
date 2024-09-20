@@ -3,6 +3,7 @@
         "name": "A-MAX",
         "species": "DAIRY",
         "about_fold": "<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Take a proactive approach to rumen efficiency and productivity.</h3><div class=\"h-[20px] w-full\"></div>",
+        "above_fold": "",    
         "below_fold": "<p class=\"text-[16px] leading-[150%]\">A-MAX™ Yeast Culture is produced with a proven strain of Saccharomyces cerevisiae. A-MAX:</p><br><ul class=\"list-outside list-disc px-5\"><li>Supports optimal fermentation and digestion</li><br><li>Maintains consistent milk production and milk quality even when heat and humidity rise</li></ul><p class=\"text-[16px] leading-[150%]\">Available in five formulations:</p><br><ul class=\"list-outside list-disc px-5\"><li>A-MAX Concentrate: Formula with high level of carrier that provides easy on-farm mixing</li><br><li>A-MAX Xtra: 2x more concentrated than A-MAX Concentrate</li><br><li>A-MAX Ultra™: 4x more concentrated than A-MAX Concentrate</li><br><li>A-MAX Liquid: Delivers the same benefits of dry yeast culture without a grain carrier</li><br><li>A-MAX SCP (Soluble Concentrated Powder): Most concentrated formulation; mixes easily</li></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/a-max",
         "files": [
@@ -21,6 +22,7 @@
         "name": "BG-MAX",
         "species": "DAIRY",
         "about_fold": "<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Dual-mode support to fight mycotoxins in dairy cows.</h3><div class=\"h-[20px] w-full\"></div><p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">BG-MAX™ is the only product on the market that takes a comprehensive approach to managing mycotoxins. It does more than just binding mycotoxins. BG-MAX also protects against mycotoxins that inevitably get through the binding phase by strengthening gut integrity. A stronger gut means a more resilient animal.</p>",
+        "above_fold": "",    
         "below_fold": "<br><ul class=\"list-outside list-disc px-5\"><li>Contains Refined Functional Carbohydrates™ (RFCs™) to prevent, or bind mycotoxins, and protect by strengthening gut integrity.</li><li>Uses highly refined bentonite, fed at a lower inclusion rate than other feed-grade bentonites, for broad-spectrum coverage.</li><li>Highly refined bentonite targets key mycotoxin strains more specifically than a feed-grade bentonite which can bind up essential nutrients a cow needs.</li><li>Builds a resilient gut for strong immune function and quick recovery in the face of threats.</li></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/bg-max",
         "files": [
@@ -39,6 +41,7 @@
         "name": "BIO-CHLOR",
         "species": "DAIRY",
         "about_fold":"<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Minimize time spent diagnosing transition issues.</h3><div class=\"h-[20px] w-full\"></div><p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">Maintain negative DCAD levels prepartum with BIO-CHLOR™. BIO-CHLOR is the only consistently formulated, palatable anion source that drives bacterial growth to support rumen function and optimize metabolizable protein (MP). BIO-CHLOR delivers the negative DCAD required to consistently acidify cows.</p>",
+        "above_fold": "",    
         "below_fold":   "<br><ul class=\"list-outside list-disc px-5\"><li>Supports dry matter intake (DMI) prepartum leading to less time diagnosing off-feed issues postpartum</li><br><li>Fewer resources needed to diagnose and treat subclinical/clinical issues associated with the transition period</li></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/bio-chlor_us",
         "files": [
@@ -57,6 +60,7 @@
         "name": "CELMANAX",
         "species": "DAIRY",
         "about_fold": "<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Prepare the immune system.</h3><div class=\"h-[20px] w-full\"></div><p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">With CELMANAX™ your cows get the benefits of multiple feed additives in one consistently high-quality formula.</p>",
+        "above_fold": "",    
         "below_fold": "<p class=\"text-[16px] leading-[150%]\">The CELMANAX advantage: The Refined Functional Carbohydrates (RFCs) in CELMANAX:</p><br><ul class=\"list-outside list-disc px-5\"><li>Help prepare the immune system ahead of a challenge so animals can respond quickly when challenges occur</li><br><li>Support optimal rumen fermentation and digestion</li><br><li>Maintain consistent milk production and milk quality even when heat and humidity rise</li><br><li>CELMANAX is available in three formulations to allow for a broad range of applications.</li></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/celmanax",
         "files": [
@@ -103,6 +107,7 @@
         "name": "DCAD+",
         "species": "DAIRY",
         "about_fold": "<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Combat heat stress with healthy, hydrated cows.</h3><div class=\"h-[20px] w-full\"></div><p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">DCAD Plus™ gives cows the potassium they need without adverse ration heating or the negative effects of chloride. It allows for normal herd productivity by replenishing potassium (K) lost through production and everyday maintenance.<br>Feeding DCAD Plus every day of lactation, and especially during warmer weather, helps maintain positive dietary cation-anion difference (DCAD) levels.</p>",
+        "above_fold": "",    
         "below_fold": "<br><ul class=\"list-outside list-disc px-5\"><li>Allows for more consistent productivity in the face of rising environmental temperatures by keeping cows hydrated</li><br><li>Supports milk fat production</li><br></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/dcad-plus",
         "files": [
@@ -121,6 +126,7 @@
         "name": "FERMENTEN",
         "species": "DAIRY",
         "about_fold": "<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Consistently maximize productivity.</h3><div class=\"h-[20px] w-full\"></div><p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">FERMENTEN™ delivers more metabolizable protein (MP). Metabolizable protein is the ideal form of protein that is digested postruminally and supplies essential amino acids to the cow.</p>",
+        "above_fold": "",    
         "below_fold": "<p class=\"text-[16px] leading-[150%]\">Optimizing dietary MP has been shown to:</p><br><ul class=\"list-outside list-disc px-5\"><li>Help heifers grow at a rate closer to their genetic potential and reach breeding size and join the milking herd in a more efficient manner</li><br><li>Supports milk and component production more consistent with the ability of the cow</li><br><li>Consistent quality and essential nutrients for full value and repeatable results</li><br></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/fermenten",
         "files": [
@@ -139,6 +145,7 @@
         "name": "SODIUM BICARB",
         "species": "DAIRY",
         "about_fold": "<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">The right buffer for productivity and performance.</h3><br><br><p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">ARM & HAMMER™ SODIUM BICARBONATE supports lactating cow performance when high-energy ration formulations often limit animals from generating enough natural buffer, causing excess acid to build up in the rumen. Its buffering capabilities help stabilize rumen acids and increase ration DCAD.</p>",
+        "above_fold": "",    
         "below_fold": "<p class=\"text-[16px] leading-[150%]\">You can count on ARM & HAMMER™ SODIUM BICARBONATE to:</p><br><ul class=\"list-outside list-disc px-5\"><li>Support feed intake by reducing the acid load in the rumen</li><br><li>Support normal milk fat production by allowing normal rumen function</li><br><li>Increases DCAD by supplying sodium without the negative effects of chloride</li><br><li>Incorporate easily into rations—can be fed free choice, top dressed or within a TMR</li><br></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/sodium-bicarbonate",
         "files": [
@@ -156,7 +163,8 @@
     {
         "name": "SQ-810",
         "species": "DAIRY",
-        "about_fold": "<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Give yourself the SQ-810 advantage.</h3><div class=\"h-[20px] w-full\"></div><p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">ARM & HAMMER™ SQ-810™ supports lactating cow performance when high-energy ration formulations often limit animals from generating enough natural buffer, causing excess acid to build up in the rumen. Its buffering capabilities help stabilize rumen acids and increase ration DCAD.</p>",
+        "about_fold": "<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Give yourself the SQ-810 advantage.</h3><div class=\"h-[20px] w-full\"></div>",
+        "above_fold": "<p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">ARM & HAMMER™ SQ-810™ supports lactating cow performance when high-energy ration formulations often limit animals from generating enough natural buffer, causing excess acid to build up in the rumen. Its buffering capabilities help stabilize rumen acids and increase ration DCAD.</p>",    
         "below_fold": "<p class=\"text-[16px] leading-[150%]\">YYou can count on ARM & HAMMER SQ-810 to:</p><br><ul class=\"list-outside list-disc px-5\"><li>Support feed intake by reducing the acid load in the rumen</li><br><li>Support normal milk fat production by allowing normal rumen function</li><br><li>Increase DCAD by supplying sodium without the negative effects of chloride</li><br><li>Incorporate easily into rations—can be fed free choice, top dressed or within a TMR</li><br></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/sq-810",
         "files": [],
