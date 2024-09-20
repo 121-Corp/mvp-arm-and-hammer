@@ -71,7 +71,7 @@
     </div>
     {{-- END SEGMENT SECTION --}}
     {{-- ABOUT  SECTION--}}
-    <div class="flex flex-col lg:flex-row-reverse w-full text-ah-medium-dark-grey bg-ah-lightest-grey lg:max-h-[700px] lg:h-[700px]">
+    <div class="flex flex-col lg:flex-row-reverse w-full text-ah-medium-dark-grey bg-ah-lightest-grey lg:max-h-[500px] lg:h-[500px]">
         <div class="lg:w-1/2">
             <h2 class="text-[48px] font-intro font-black leading-[100%] uppercase px-[20px] lg:px-[82px] mt-[30px] lg:mt-[91.5px]">About us</h2>
             <div class="mt-[30px] lg:mt-[110px] px-[20px] lg:pl-[82px]
