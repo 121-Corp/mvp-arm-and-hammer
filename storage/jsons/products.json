@@ -39,7 +39,7 @@
         "name": "BIO-CHLOR",
         "species": "DAIRY",
         "about_fold":"<h3 class=\"text-[26px] lg:text-[36px] font-bold leading-[120%] tracking-[-0.258px] lg:tracking-[-0.36px]\">Minimize time spent diagnosing transition issues.</h3><div class=\"h-[20px] w-full\"></div><p class=\"text-[16px] lg:text-[28px] font-semibold lg:font-medium lg:px-[130px]\">Maintain negative DCAD levels prepartum with BIO-CHLOR™. BIO-CHLOR is the only consistently formulated, palatable anion source that drives bacterial growth to support rumen function and optimize metabolizable protein (MP). BIO-CHLOR delivers the negative DCAD required to consistently acidify cows.</p>",
-        "below_fold":   "<p class=\"text-[16px] leading-[150%]\">The BIO-CHLOR advantage:</p><br><ul class=\"list-outside list-disc px-5\"><li>Supports dry matter intake (DMI) prepartum leading to less time diagnosing off-feed issues postpartum</li><br><li>Fewer resources needed to diagnose and treat subclinical/clinical issues associated with the transition period</li></ul>",
+        "below_fold":   "<br><ul class=\"list-outside list-disc px-5\"><li>Supports dry matter intake (DMI) prepartum leading to less time diagnosing off-feed issues postpartum</li><br><li>Fewer resources needed to diagnose and treat subclinical/clinical issues associated with the transition period</li></ul>",
         "link": "https://ahfoodchain.com/en/segments/dairy/names/bio-chlor_us",
         "files": [
             {
