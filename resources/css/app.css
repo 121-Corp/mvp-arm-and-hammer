@@ -139,6 +139,11 @@
                 text-white bg-ah-blue border border-ah-blue transition-colors duration-500
                 hover:bg-white hover:text-ah-blue
     }
+    .ah-button-white {
+        @apply ah-button
+                text-ah-blue bg-white border border-white transition-colors duration-500
+                hover:bg-ah-blue  hover:text-white
+    }
 }
 
 /* Main site header */

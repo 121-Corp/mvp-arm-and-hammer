@@ -11,24 +11,26 @@
     <x-header :$title :$subtitle :$phrase :$imgPathDesktop :$imgPathMovil :$headerType />
 
     {{-- SEGMENT SECTION --}}
-    <div class="flex flex-col lg:flex-row w-full text-white lg:max-h-[700px] lg:h-[700px]">
-        <div class="h-[432px] lg:h-full bg-ah-blue py-[70px] px-[19px] lg:px-0 lg:py-[100px] lg:pl-[167px] lg:pr-[95px] lg:w-1/2">
+    <div class="flex flex-col lg:flex-row w-full text-white lg:max-h-[650px] lg:h-full">
+
+        <div class="h-full bg-ah-blue py-[70px] px-[19px] lg:px-0 lg:py-[95px] lg:pl-[167px] lg:pr-[95px] lg:w-1/2">
             <h2 class="text-[48px] font-intro font-black leading-[100%] lg:text-[56px] lg:leading-[68px] uppercase">Segment
             </h2>
-
-            <div class="mt-[16px] flex flex-col justify-end text-start items-start h-[90%] font-kohinoor max-w-[476px] w-full">
-                <p class="font-bold text-[16px] leading-[150%] lg:text-[18px] lg:leading-[150%]">
+            <div class="mt-[16px] flex flex-col justify-start text-start items-start h-[90%] font-kohinoor max-w-[476px] w-full">
+                <p class="font-bold text-[16px] leading-[150%] lg:text-[18px] lg:leading-[150%] lg:mt-[150px] mt-12 ">
                 Herd health and productivity starts here.
                 </p>
                 <br>
                 <p class="font-normal text-[16px] leading-[150%] lg:text-[18px]">
                 Set your herd apart with Arm & Hammer Animal Nutrition’s comprehensive nutrition and gut health portfolio.
                 </p>
+                <br>
+                <a href="{{route('products')}}" class="ah-button-white mt-[15px]">Learn more</a>
             </div>
         </div>
         <div class="lg:h-full lg:w-1/2 relative">
             <div class="w-[20px] bg-ah-red absolute h-full"></div>
-            <div class="text-left max-h-[700px] hover-shine">
+            <div class="text-left max-h-[650px] lg:h-full hover-shine">
                 <figure>
                 <div class="mt-[31px] lg:mt-[95px]">
                     <div class= "mx-[44px] flex justify-between items-center lg:mx-[67px]">
@@ -60,7 +62,7 @@
                             <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}"
                                 class="lg:hidden g:hidden w-max-[323px] w-full max-h-[255px] h-auto" alt="">
                             <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}"
-                                class="hidden lg:block max-h-[522px] w-auto h-auto object-center object-cover" alt="">
+                                class="hidden lg:block w-full auto object-center object-cover" alt="">
                         </a>
                     </div>
                 </figure>

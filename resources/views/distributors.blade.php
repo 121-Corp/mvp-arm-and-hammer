@@ -57,4 +57,10 @@
         </div>
     </div>
 </section>
+
+<script>
+    const searchContact = document.getElementById("searchContact");
+    searchContact.value = "{{$searchWord}}";
+    console.log(searchContact);
+</script>
 @endsection

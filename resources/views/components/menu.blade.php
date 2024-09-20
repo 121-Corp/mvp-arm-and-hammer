@@ -45,7 +45,7 @@
                             </li>
                             @endforeach
                             <li class="border-b">
-                                <a class="text-ah-darkest-grey text-center no-underline" href="/products">
+                                <a class="text-ah-darkest-grey text-center no-underline" href="{{route('products')}}">
                                     <div class="w-full">
                                     All products
                                     </div>
