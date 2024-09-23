@@ -273,6 +273,12 @@
     /*Termina la animación*/
 
 
+    input[type="text"]::-webkit-calendar-picker-indicator,
+    input[type="email"]::-webkit-calendar-picker-indicator,
+    input[type="number"]::-webkit-calendar-picker-indicator,
+    input[type="search"]::-webkit-calendar-picker-indicator {
+        display: none !important;
+    }
 
   /* Shine animation Dairy section */
 

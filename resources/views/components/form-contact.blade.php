@@ -8,6 +8,7 @@
         <div class="mt-[25px]">
             <form class="space-y-14"  method="post" action="" id="frmGetInTouch">
                 @csrf
+                <datalist id="options"></datalist>
                 <div class="">
                     <label for="distributor"
                         class="text-white flex items-center justify-start text-center text-[24px] font-medium leading-[41.2px]">
@@ -15,7 +16,7 @@
                         Distributor
                     </label>
                     <div class="flex items-center relative mt-[15px]">
-                        <input type="textbox" placeholder="State"
+                        <input type="text" list="options" placeholder="State"
                             class="h-[72px] rounded bg-ah-red border placeholder:text-[18px] placeholder-white border-ah-lighter-grey text-white text-[18px]rounded-lg block w-full p-2.5 focus:bg-white focus:text-ah-darkest-grey focus:border-ah-darkest-grey focus:placeholder-ah-darkest-grey"
                            id="distributor"/>
                         <button type="button" class="cursor-pointer text-white w-[24px] h-auto absolute right-[25px]" id="btnDistributor">
@@ -25,6 +26,8 @@
                         </button>
                     </div>
                 </div>
+
+                {{-- start salesRepresentative --}}
                 <div class="">
                     <label for="salesRepresentative"
                     class="text-white flex items-center justify-start text-center text-[24px] font-medium leading-[41.2px]">
@@ -32,7 +35,7 @@
                         Sales Representative
                     </label>
                     <div class="flex items-center relative mt-[15px]">
-                        <input type="textbox" placeholder="State"
+                        <input list="options" type="text" placeholder="State"
                             class="h-[72px] rounded bg-ah-red border placeholder:text-[18px] placeholder-white border-ah-lighter-grey text-white text-[18px]rounded-lg block w-full p-2.5 focus:bg-white focus:text-ah-darkest-grey focus:border-ah-darkest-grey focus:placeholder-ah-darkest-grey"
                             id="salesRepresentative"/>
                             <button type="button" class="cursor-pointer text-white w-[24px] h-auto absolute right-[25px]" id="btnSalesRepresentative">
@@ -54,10 +57,6 @@
     </div>
 </div>
 
-
-<style>
-
-</style>
 <script>
     const btnRepresentative = document.getElementById("btnSalesRepresentative");
     const btnDistributor = document.getElementById("btnDistributor");

@@ -14,13 +14,15 @@ class PageController extends Controller
 {
 
     protected  $products;
+    protected  $states;
     public function __construct()
     {
        $this->products = collect(Storage::json('public/jsons/products.json'));
+       $this->states =  State::get('name');
     }
 
     public function index(){
-
+        // dd(json_encode(  $this->states ));
         return view('home')->with([
             "title" => "YOUR NUTRITION POWERHOUSE",
             "subtitle" => "Set your dairy apart with feed ingredients that optimize the health of your herd.",
@@ -28,7 +30,7 @@ class PageController extends Controller
             "imgPathDesktop" => "images/Desk/Home/Banner_Home_2x.png",
             "imgPathMovil" => "images/Mobile/Home/Banner_Home_2x.png",
             "headerType" => "home",
-            "products" => $this->products
+            "states" =>  $this->states
         ]);
     }
 
