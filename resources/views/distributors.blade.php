@@ -53,8 +53,22 @@
                         <div class="hidden w-px h-full absolute top-0 left-0 bg-ah-lighter-grey-2 sm:block"></div>
                     </div>
                 @endforeach
+
+            @else
+            <div class="w-full text-center py-10">
+                <h2 class="m-0 font-bold text-[36px] leading-[1.2] text-ah-medium-dark-grey xl:text-[46px]">
+                    Not finding a distributor in your area.
+                </h2>
+                <br>
+                <a href="{{route('contact')}}" class="m-0 font-bold text-[30px] leading-[1.2] text-ah-medium-dark-grey xl:text-[40px] underline">Contact Us</a>
+            </div>
             @endif
         </div>
     </div>
 </section>
+
+<script>
+    const searchContact = document.getElementById("searchContact");
+    searchContact.value = "{{$searchWord}}";
+</script>
 @endsection

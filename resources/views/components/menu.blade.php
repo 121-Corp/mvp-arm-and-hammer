@@ -45,7 +45,7 @@
                             </li>
                             @endforeach
                             <li class="border-b">
-                                <a class="text-ah-darkest-grey text-center no-underline" href="/products">
+                                <a class="text-ah-darkest-grey text-center no-underline" href="{{route('products')}}">
                                     <div class="w-full">
                                     All products
                                     </div>
@@ -94,7 +94,7 @@
             <!-- Mobile Menu -->
             <div
                 id="mobileMenu"
-                class="hidden flex-col flex-nowrap justify-start items-center w-screen h-screen px-[30px] py-[8vh]
+                class="hidden flex-col flex-nowrap justify-start items-center w-screen h-full px-[30px] py-[8vh]
                        fixed top-0 left-0 z-[100] bg-white md:hidden"
             >
                 <div class="w-full flex-initial pb-[20px] text-center">
@@ -115,8 +115,8 @@
 
                     <li><a class="ah-text-link" href="{{ route('home') }}">Home</a></li>
                     <li>
-                        <a class="ah-text-link" >Products &#9207;</a>
-                        <ul class="dropdown w-full h-auto  bg-[#ffffff]" aria-label="submenu">
+                        <a class="ah-text-link">Products &#9207;</a>
+                        <ul class="dropdown w-full h-auto bg-[#ffffff]" aria-label="submenu">
                             @foreach (collect(Storage::json('public/jsons/products.json')) as $product )
                            <li class="border-b">
                                 <a class="text-ah-darkest-grey text-center no-underline" href="{{ route('product-detail', $product['name']) }}">
@@ -129,7 +129,7 @@
                             <li class="border-b">
                                 <a class="text-ah-darkest-grey text-center no-underline" href="/products">
                                     <div class="w-full">
-                                    All products
+                                        All products
                                     </div>
                                 </a>
                             </li>
@@ -149,9 +149,6 @@
 
 </header>
 <style>
-
-
-
 ul.dropdown {
 	list-style: none;
 	margin: 0;
@@ -160,13 +157,13 @@ ul.dropdown {
 
 ul.dropdown li {
 	color: #fff;
-  background: white;
-	display: block;
-	float: left;
-	padding: 1rem;
-	position: relative;
-	text-decoration: none;
-  transition-duration: 0.5s;
+    background: white;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
 }
 
 ul.dropdown li:hover,
@@ -178,7 +175,6 @@ ul.dropdown li:focus-within {
 ul.dropdown li:focus-within a {
   outline: none;
 }
-
 
 ul li  ul {
     visibility: hidden;
