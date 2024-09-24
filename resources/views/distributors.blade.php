@@ -56,7 +56,7 @@
             @else
             <div class="w-full text-center py-10">
                 <h2 class="m-0 font-bold text-[36px] leading-[1.2] text-ah-medium-dark-grey xl:text-[46px]">
-                    Not finding a distributor in your area.
+                    Not finding a distributor in your area?
                 </h2>
                 <br>
                 <a href="{{route('contact')}}" class="m-0 font-bold text-[30px] leading-[1.2] text-ah-medium-dark-grey xl:text-[40px] underline">Contact Us</a>
@@ -68,6 +68,7 @@
 
 <script>
     const searchContact = document.getElementById("searchContact");
+    
     searchContact.value = "{{$searchWord}}";
 </script>
 
@@ -107,3 +108,52 @@
 @endif
 
 @endsection
+
+@if (isset($states))
+ <script>
+    const data = JSON.parse({!! json_encode($states) !!})
+    
+    // Seleccionamos el datalist y el input
+    const datalist = document.getElementById('options');
+    const distributor = searchContact;
+  
+   // const representative = document.getElementById("salesRepresentative");
+
+    function loadOptions(value) {
+        // Limpiar las opciones actuales
+        datalist.innerHTML = '';
+
+        // Filtrar las opciones en base al valor ingresado
+        const filteredData = data.filter(item => item.name.toLowerCase().includes(value.toLowerCase()));
+
+        console.log(filteredData);
+
+        // Crear y añadir las opciones filtradas
+        filteredData.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item.name;
+            datalist.appendChild(option);
+        });
+    }
+
+    // Evento que escucha cuando el usuario escribe en el input
+    distributor.addEventListener('input', (e) => {
+        const searchWord = e.target.value;
+        if (searchWord && searchWord.length >=2) {
+            loadOptions(searchWord);
+        } else {
+            datalist.innerHTML = '';
+        }
+    });
+
+    representative.addEventListener('input', (e) => {
+        const searchWord = e.target.value;
+        if (searchWord && searchWord.length >=2) {
+            loadOptions(searchWord);
+        } else {
+            datalist.innerHTML = '';
+        }
+    });
+</script>
+
+@endif
