@@ -209,7 +209,6 @@
     const productsToggle = document.getElementById('products-toggle');
     const productsMenu = document.getElementById('products-menu');
     productsToggle.addEventListener('click', () => {
-        console.log("holis");
         productsMenu.classList.toggle('hidden');
     });
 </script>

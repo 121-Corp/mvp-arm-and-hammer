@@ -111,8 +111,6 @@
         // Filtrar las opciones en base al valor ingresado
         const filteredData = data.filter(item => item.name.toLowerCase().includes(value.toLowerCase()));
 
-        console.log(filteredData);
-
         // Crear y añadir las opciones filtradas
         filteredData.forEach(item => {
             const option = document.createElement('option');
