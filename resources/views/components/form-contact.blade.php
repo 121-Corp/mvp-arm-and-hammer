@@ -3,7 +3,7 @@
         class="py-[70px] pl-[20px] pr-[20px] lg:pl-[160px] lg:pr-[82px] lg:py-[157px] items-center; gap-[10px] self-stretch bg-ah-red lg:w-1/2">
         <h2 class="text-white text-[48px] font-intro font-black leading-[25px]">
             Get in touch <br>
-            <span class="text-[18px]">(Only USA)</span>
+            <!--span class="text-[18px]">(Only USA)</span-->
         </h2>
         <div class="mt-[25px]">
             <form class="space-y-14"  method="post" action="" id="frmGetInTouch">
