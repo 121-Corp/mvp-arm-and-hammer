@@ -35,7 +35,7 @@
         @vite('resources/js/app.js')
 
         {{-- @include('partials.tagmanager') --}}
-        @include('partials.cookies')
+        {{-- @include('partials.cookies') --}}
     </head>
     <body class="font-kohinoor font-normal antialiased ">
         @section('sidebar')

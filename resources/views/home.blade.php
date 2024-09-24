@@ -56,12 +56,12 @@
                     </a>
 
                 </div>
-                <div class="ml-5 hover-shine">
+                <div class="ml-5 hover-shine h-full flex flex-col justify-center">
                         <a href="{{route('products')}}">
                             <img src="{{ asset('images/Mobile/Home/Dairy_2x.png') }}"
                                 class="lg:hidden g:hidden w-max-[323px] w-full max-h-[255px] h-auto" alt="">
                             <img src="{{ asset('images/Desk/Home/Diary_2x.png') }}"
-                                class="hidden lg:block w-full object-center object-cover" alt="">
+                                class="hidden lg:block max-w-[642px] max-h-[522px] w-full object-center object-cover lg:mx-auto" alt="">
                         </a>
                 </div>
             </figure>
@@ -81,7 +81,8 @@
                 <p>
                 We harness the power of science to drive positive change in global animal production, for greater sustainability across the world – and on your farm. Local results for global impact.
                 </p>
-
+                <br>
+                <br>
             </div>
         </div>
         <div class="text-left lg:w-1/2">
@@ -91,24 +92,7 @@
     </div>
     {{-- END ABOUT SECTION --}}
 
-    <x-form-contact></x-form-contact>
+    <x-form-contact :$states />
 
-    <script>
-        const data = {!! json_encode($states) !!}
 
-        // Seleccionamos el datalist y el input
-        const datalist = document.getElementById('options');
-
-        // Función para cargar las opciones desde el JSON
-        function loadOptions(data) {
-           data.forEach(item => {
-                const option = document.createElement('option');
-                option.value = item.name; // Usamos la propiedad 'name' del JSON
-                datalist.appendChild(option);
-            });
-        }
-
-        // Cargar las opciones al iniciar la página
-        window.onload = () => loadOptions(data);
-    </script>
 @endsection

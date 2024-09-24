@@ -42,7 +42,8 @@ class PageController extends Controller
             "imgPathDesktop" => "images/Desk/Products/Banner_Products_2x.png",
             "imgPathMovil" => "images/Mobile/Products/Banner_Products_2x.png",
             "headerType" => "default",
-            "products" => $this->products
+            "products" => $this->products,
+            "states" =>  $this->states
         ]);
     }
     public function productsDetails(Request $request){
@@ -55,7 +56,8 @@ class PageController extends Controller
             "imgPathDesktop" => "images/Desk/Product-Details/banner_desktop_2x.png",
             "imgPathMovil" => "images/Mobile/Product-Details/banner_mobile_2x.png",
             "headerType" => "details",
-            "product" => $product
+            "product" => $product,
+            "states" =>  $this->states
         ]);
     }
 
