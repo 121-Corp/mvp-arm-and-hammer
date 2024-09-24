@@ -29,12 +29,12 @@
                         >Home</a>
                     </li>
                     <li class="basis-[calc(100%/3-156px/3)] text-center md:flex md:flex-col md:h-full md:items-center md:justify-center">
-                        <a
-                            class="ah-text-link px-[5px] pb-[7px] pt-[5px] uppercase text-center align-middle"
+                        {{-- <button
+                            class="ah-text-link px-[5px] pb-[7px] pt-[5px] uppercase text-center align-middle cursor-pointer"
                             id="btnMenuProducts"
                             >Products &#9207;
-                        </a>
-                        <ul class="dropdown w-full h-auto absolute top-[85%] left-[-1px] z-[1] bg-[#ffffff]" aria-label="submenu">
+                        </button> --}}
+                        {{-- <ul class="dropdown w-full h-auto absolute top-[85%] left-[-1px] z-[1] bg-[#ffffff]" aria-label="submenu">
                             @foreach (collect(Storage::json('public/jsons/products.json')) as $product )
                            <li class="border-b">
                                 <a class="text-ah-darkest-grey text-center no-underline" href="{{ route('product-detail', $product['name']) }}">
@@ -44,19 +44,41 @@
                                 </a>
                             </li>
                             @endforeach
-                        </ul>
+                        </ul> --}}
                         {{-- <div id="menuProducts"
                             class="hidden w-full h-auto absolute top-[100%] left-[-1px] z-[1] bg-[#ffffff] ">
                             <div class="flex flex-col" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                 @foreach (collect(Storage::json('public/jsons/products.json')) as $product )
                                 <a class="text-[#1E1E1E] text-center no-underline" href="{{ route('product-detail', $product['name']) }}">
-                                    <div class="border-b w-full py-[15px]">
+                                    <div class="border-b w-full ">
                                          {{$product['name'] }}
                                         </div>
                                 </a>
                                 @endforeach
                             </div>
                         </div> --}}
+                        <div class="relative">
+                            <button id="ourMenuButton"
+                                class="p-0 lg:p-4 text-[20px] leading-5 font-sans font-semibold inline-flex items-center text-left">
+                                Our Companies <span class="ml-2 inline-block text-[14px] leading-5">&#9660;</span>
+                            </button>
+                            <div id="ourMenu"
+                                class="hidden w-full h-[310px] absolute rounded-[20px] top-0 z-[-1] bg-white">
+                                <div class="flex flex-col justify-end items-start" role="menu"
+                                    aria-orientation="vertical" aria-labelledby="options-menu">
+                                    @foreach (collect(Storage::json('public/jsons/products.json')) as $product )
+                                    <div class="px-4 border-b border-[##AFAFAF]">
+
+                                        <a class="text-[#1E1E1E] text-center no-underline" href="{{ route('product-detail', $product['name']) }}">
+                                            <a class="text-[#1E1E1E] p-0 lg:p-4 no-underline" href="{{ route('product-detail', $product['name']) }}">
+                                                {{$product['name'] }}
+                                            </a>
+                                        </a>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="basis-[calc(100%/3-156px/3)] text-center md:flex md:flex-col md:h-full md:items-center md:justify-center">
                         <a
@@ -108,7 +130,7 @@
 
                     <li><a class="ah-text-link" href="{{ route('home') }}">Home</a></li>
                     <li>
-                        <a class="ah-text-link" >Products &#9207;</a>
+                        <button class="ah-text-link" >Products &#9207;</button>
                         <ul class="dropdown w-full h-auto  bg-[#ffffff]" aria-label="submenu">
                             @foreach (collect(Storage::json('public/jsons/products.json')) as $product )
                            <li class="border-b">

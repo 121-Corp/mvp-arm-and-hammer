@@ -22,7 +22,6 @@ class PageController extends Controller
     }
 
     public function index(){
-        // dd(json_encode(  $this->states ));
         return view('home')->with([
             "title" => "YOUR NUTRITION POWERHOUSE",
             "subtitle" => "Set your dairy apart with feed ingredients that optimize the health of your herd.",
@@ -91,7 +90,7 @@ class PageController extends Controller
                                                 $join->on('business_contacts.id', '=', 'state_business_contacts.contact')
                                                      ->where('business_contacts.role', 'distributor');
                                             })
-                                            ->get();
+                                            ->get()->all();
                     }
                 }
             }
@@ -100,7 +99,9 @@ class PageController extends Controller
             $distributors = BusinessContact::where('role', "distributor")->get();
             $stateTitle = "United States";
             $searchWord = "United States";
+
         }
+
 
         return view('distributors')->with([
             "title" => "Distributors",
@@ -111,8 +112,7 @@ class PageController extends Controller
             "headerType" => "distributors",
             "distributors" => $distributors,
             "stateTitle" => $stateTitle,
-            "searchWord" => $searchWord,
-            "states" =>  $this->states
+            "searchWord" => $searchWord
         ]);
     }
 
@@ -216,7 +216,8 @@ class PageController extends Controller
             "headerType" => "representatives",
             "representatives" => $representatives,
             "stateTitle" => $stateTitle,
-            "searchWord" => $searchWord
+            "searchWord" => $searchWord,
+            "states" => $this->states
         ]);
     }
 
