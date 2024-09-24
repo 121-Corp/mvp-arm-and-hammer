@@ -128,23 +128,25 @@
     <div class="ah-container lg:hidden">
         <ul class="max-w-[180px] m-0 list-none font-light text-[12px] leading-none md:max-w-full">
             <li class="mb-[20px]">
-                <a
-                    href="https://churchdwight.com/"
-                    class="ah-text-link"
-                    target="_blank"
-                >Arm & Hammer Animal Nutrition ©2024 Church & Dwight Co., Inc</a>
-            </li>
-            <li class="mb-[20px]">
-                <button
+            <button
                     class="ah-text-link optanon-toggle-display"
                 >Cookie Management</button>
             </li>
-            <li>
-                <a
+            <li class="mb-[20px]">
+              
+            <a
                     href="https://churchdwight.com/privacy-policy.aspx"
                     class="ah-text-link"
                     target="_blank"
                 >Privacy Policy</a>
+            </li>
+            <li>
+              
+                <a
+                    href="https://churchdwight.com/"
+                    class="ah-text-link"
+                    target="_blank"
+                >©2024 Church & Dwight Co., Inc</a>
             </li>
         </ul>
     </div>
