@@ -11,12 +11,12 @@
     <x-header :$title :$subtitle :$phrase :$imgPathDesktop :$imgPathMovil :$headerType />
 
     {{-- SEGMENT SECTION --}}
-    <div class="flex flex-col lg:flex-row w-full text-white lg:max-h-[650px] lg:h-full">
-        <div class="h-auto bg-ah-blue py-[70px] px-[19px] lg:py-[95px] lg:pl-[167px] lg:pr-[95px] lg:w-1/2">
-            <h2 class="text-[48px] font-intro font-black leading-[100%] lg:text-[56px] lg:leading-[68px] uppercase">Segment
+    <div class="flex flex-col lg:flex-row w-full text-white lg:max-h-[520px] lg:h-full">
+        <div class="h-auto bg-ah-blue py-[70px] px-[19px] lg:py-[50px] lg:pl-[167px] lg:pr-[95px] lg:w-1/2">
+            <h2 class="text-[48px] font-intro font-black leading-[100%] lg:text-[56px] lg:leading-[68px] uppercase">Dairy
             </h2>
             <div class="mt-[16px] flex flex-col justify-start text-start items-start h-[90%] font-kohinoor max-w-[476px] w-full">
-                <p class="font-bold text-[16px] leading-[150%] lg:text-[18px] lg:leading-[150%] lg:mt-[150px] mt-12 ">
+                <p class="font-bold text-[16px] leading-[150%] lg:text-[18px] lg:leading-[150%] lg:mt-[70px] mt-12 ">
                 Herd health and productivity starts here.
                 </p>
                 <br>
@@ -30,8 +30,8 @@
         <div class="h-auto lg:w-1/2 relative hover-shine">
             <div class="w-[20px] bg-ah-red absolute h-full"></div>
             <figure class="overflow-hidden lg:h-full">
-                <div class= "mx-[44px] flex justify-between items-center lg:mx-[67px] pt-[31px] lg:pt-[95px]">
-                    <a href="{{route('products')}}">
+                <div class= "mx-[44px] flex justify-between items-center lg:mx-[67px] pt-[31px] lg:pt-[7px]">
+                    <!--a href="{{route('products')}}">
                         <span class="text-[24px] text-ah-medium-dark-grey font-intro font-black leading-[146.54%] lg:text-[56px] lg:leading-[41.2px] uppercase">Dairy</span>
                     </a>
                     <a href="{{route('products')}}">
@@ -53,7 +53,7 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </span>
-                    </a>
+                    </a-->
 
                 </div>
                 <div class="ml-5 hover-shine h-full flex flex-col justify-center">
@@ -69,9 +69,9 @@
     </div>
     {{-- END SEGMENT SECTION --}}
     {{-- ABOUT  SECTION--}}
-    <div class="flex flex-col lg:flex-row-reverse w-full text-ah-medium-dark-grey bg-ah-lightest-grey lg:max-h-[500px] lg:h-[500px]">
+    <div class="flex flex-col lg:flex-row-reverse w-full text-ah-medium-dark-grey bg-ah-lightest-grey lg:max-h-[520px] lg:h-[500px]">
         <div class="lg:w-1/2">
-            <h2 class="text-[48px] font-intro font-black leading-[100%] uppercase px-[20px] lg:px-[82px] mt-[30px] lg:mt-[91.5px]">About us</h2>
+            <h2 class="text-[48px] font-intro font-black leading-[100%] uppercase px-[20px] lg:px-[82px] mt-[30px] lg:mt-[50px]">About us</h2>
             <div class="mt-[30px] lg:mt-[110px] px-[20px] lg:pl-[82px]
                     lg:pr-[160px] text-[16px] lg:text-[18px] leading-[150%] font-kohinoor pb-[40px]">
                 <p>
@@ -87,7 +87,7 @@
         </div>
         <div class="text-left lg:w-1/2">
             <img src="{{ asset('images/Mobile/Home/About_us_2x.png') }}" class="lg:hidden max-h-[305px] w-full" alt="">
-            <img src="{{ asset('images/Desk/Home/About_us_3x.png') }}" class="hidden lg:block w-full max-h-[700px] h-auto object-center object-cover" alt="">
+            <img src="{{ asset('images/Desk/Home/About_us_3x.png') }}" class="hidden lg:block w-full max-h-[520px] h-auto object-center object-cover" alt="">
         </div>
     </div>
     {{-- END ABOUT SECTION --}}

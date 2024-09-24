@@ -111,7 +111,8 @@ class PageController extends Controller
             "headerType" => "distributors",
             "distributors" => $distributors,
             "stateTitle" => $stateTitle,
-            "searchWord" => $searchWord
+            "searchWord" => $searchWord,
+            "states" =>  $this->states
         ]);
     }
 
