@@ -90,7 +90,7 @@ class PageController extends Controller
                                                 $join->on('business_contacts.id', '=', 'state_business_contacts.contact')
                                                      ->where('business_contacts.role', 'distributor');
                                             })
-                                            ->get();
+                                            ->get()->all();
                     }
                 }
             }
@@ -99,7 +99,9 @@ class PageController extends Controller
             $distributors = BusinessContact::where('role', "distributor")->get();
             $stateTitle = "United States";
             $searchWord = "United States";
+
         }
+
 
         return view('distributors')->with([
             "title" => "Distributors",
@@ -110,7 +112,8 @@ class PageController extends Controller
             "headerType" => "distributors",
             "distributors" => $distributors,
             "stateTitle" => $stateTitle,
-            "searchWord" => $searchWord
+            "searchWord" => $searchWord,
+            "states" => $this->states
         ]);
     }
 
@@ -214,7 +217,8 @@ class PageController extends Controller
             "headerType" => "representatives",
             "representatives" => $representatives,
             "stateTitle" => $stateTitle,
-            "searchWord" => $searchWord
+            "searchWord" => $searchWord,
+            "states" => $this->states
         ]);
     }
 
