@@ -21,5 +21,5 @@
         @endforeach
     </div>
 </div>
-<x-form-contact></x-form-contact>
+<x-form-contact :$states />
 @endsection

@@ -57,6 +57,7 @@
     </div>
 </div>
 
+
 <script>
     const btnRepresentative = document.getElementById("btnSalesRepresentative");
     const btnDistributor = document.getElementById("btnDistributor");
@@ -94,3 +95,50 @@
     });
 
 </script>
+@if (isset($states))
+ <script>
+    const data = JSON.parse({!! json_encode($states) !!})
+
+    // Seleccionamos el datalist y el input
+    const datalist = document.getElementById('options');
+    const distributor = document.getElementById("distributor");
+    const representative = document.getElementById("salesRepresentative");
+
+    function loadOptions(value) {
+        // Limpiar las opciones actuales
+        datalist.innerHTML = '';
+
+        // Filtrar las opciones en base al valor ingresado
+        const filteredData = data.filter(item => item.name.toLowerCase().includes(value.toLowerCase()));
+
+        console.log(filteredData);
+
+        // Crear y añadir las opciones filtradas
+        filteredData.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item.name;
+            datalist.appendChild(option);
+        });
+    }
+
+    // Evento que escucha cuando el usuario escribe en el input
+    distributor.addEventListener('input', (e) => {
+        const searchWord = e.target.value;
+        if (searchWord && searchWord.length >=2) {
+            loadOptions(searchWord);
+        } else {
+            datalist.innerHTML = '';
+        }
+    });
+
+    representative.addEventListener('input', (e) => {
+        const searchWord = e.target.value;
+        if (searchWord && searchWord.length >=2) {
+            loadOptions(searchWord);
+        } else {
+            datalist.innerHTML = '';
+        }
+    });
+</script>
+
+@endif
