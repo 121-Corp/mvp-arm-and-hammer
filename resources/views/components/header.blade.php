@@ -67,10 +67,10 @@
                             isset($headerType) and
                             ( ($headerType == 'distributors') or ($headerType == 'representatives') )
                         ),
-                        'max-w-[250px] leading-none text-[44px] sm:max-w-[400px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px]' => (
+                        'max-w-[250px] leading-none text-[44px] sm:max-w-[400px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px] lg:pb-[80px]' => (
                             isset($headerType) and ($headerType == 'contact')
                         ),
-                        'max-w-[350px] leading-[1.15] text-[48px] sm:max-w-[480px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px] lg:leading-none' => (
+                        'max-w-[350px] leading-[1.15] text-[48px] sm:max-w-[480px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px] lg:leading-none lg:pb-[80px]' => (
                             !isset($headerType) or ($headerType == 'default')
                         ),
                     ])

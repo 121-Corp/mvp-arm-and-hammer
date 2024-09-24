@@ -41,6 +41,7 @@
         @section('sidebar')
         {{-- render de menu in all pages  --}}
         @include('components.menu')
+        {{-- @include('components.menutest') --}}
         @show
 
         <div class="container max-w-[1920px] mx-auto my-0">
