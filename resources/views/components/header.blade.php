@@ -67,10 +67,10 @@
                             isset($headerType) and
                             ( ($headerType == 'distributors') or ($headerType == 'representatives') )
                         ),
-                        'max-w-[250px] leading-none text-[44px] sm:max-w-[400px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px]' => (
+                        'max-w-[250px] leading-none text-[44px] sm:max-w-[400px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px] lg:pb-[80px]' => (
                             isset($headerType) and ($headerType == 'contact')
                         ),
-                        'max-w-[350px] leading-[1.15] text-[48px] sm:max-w-[480px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px] lg:leading-none' => (
+                        'max-w-[350px] leading-[1.15] text-[48px] sm:max-w-[480px] sm:text-[68px] lg:max-w-[100%] lg:text-[96px] lg:leading-none lg:pb-[80px]' => (
                             !isset($headerType) or ($headerType == 'default')
                         ),
                     ])
@@ -142,7 +142,7 @@
                                 name="state"
                                 @class([
                                     'w-full m-0 pt-[18px] pb-[22px] pl-[30px] pr-[75px] relative font-light text-[18px] leading-[1.67] tracking-[-0.01em]',
-                                    'border border-solid border-white text-white caret-white placeholder:text-black',
+                                    'border border-solid border-white text-white placeholder:text-black',
                                     'shadow-[0_0_24px_0_rgba(255,255,255,0)] transition-shadow duration-500',
                                     'focus-visible:outline-0 focus-visible:shadow-[0_0_24px_0_rgba(255,255,255,0.5)]',
                                     'pl-[20px] sm:pr-[65px] bg-white text-black caret-black placeholder:text-black font-medium',

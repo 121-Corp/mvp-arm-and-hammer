@@ -22,7 +22,6 @@ class PageController extends Controller
     }
 
     public function index(){
-        // dd(json_encode(  $this->states ));
         return view('home')->with([
             "title" => "YOUR NUTRITION POWERHOUSE",
             "subtitle" => "Set your dairy apart with feed ingredients that optimize the health of your herd.",
