@@ -34,10 +34,11 @@
         <!-- scripts -->
         @vite('resources/js/app.js')
 
-        {{-- @include('partials.tagmanager') --}}
+        @include('partials.tagmanager')
         {{-- @include('partials.cookies') --}}
     </head>
     <body class="font-kohinoor font-normal antialiased ">
+        @include('partials.analytics')
         @section('sidebar')
         {{-- render de menu in all pages  --}}
         @include('components.menu')
