@@ -75,16 +75,20 @@
        let state= salesRepresentativeInput.value;
         sendData("{{route('representatives')}}",state);
     });
-    salesRepresentativeInput.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' && salesRepresentativeInput.value != "") {
-        let state= salesRepresentativeInput.value;
-        sendData( "{{route('distributors')}}",state);
-      }
-    });
+
 
     btnDistributor.addEventListener('click',function(){
         let state= distributorInput.value;
         sendData( "{{route('distributors')}}",state);
+    });
+
+
+
+    salesRepresentativeInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' && salesRepresentativeInput.value != "") {
+        let state= salesRepresentativeInput.value;
+        sendData( "{{route('representatives')}}",state);
+      }
     });
 
     distributorInput.addEventListener('keydown', (event) => {
