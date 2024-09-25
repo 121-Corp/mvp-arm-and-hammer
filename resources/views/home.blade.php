@@ -87,7 +87,7 @@
         </div>
         <div class="text-left lg:w-1/2">
             <img src="{{ asset('images/Mobile/Home/About_us_2x.png') }}" class="lg:hidden max-h-[305px] w-full" alt="">
-            <img src="{{ asset('images/Desk/Home/About_us_3x.png') }}" class="hidden lg:block w-full max-h-[520px] h-auto object-center object-cover  lg:mx-auto" alt="">
+            <img src="{{ asset('images/Desk/Home/About_us_3x.png') }}" class="hidden lg:block w-full h-full object-center object-cover" alt="">
         </div>
     </div>
     {{-- END ABOUT SECTION --}}
