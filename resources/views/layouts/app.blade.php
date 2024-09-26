@@ -23,7 +23,13 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="YOUR NUTRITION POWERHOUSE. Set your dairy apart with feed ingredients that optimize the health of your herd." />
 
+        <meta property="og:title" content="Arm & Hammer Animal and Food Production" />
+
+        <meta property="og:description" content="YOUR NUTRITION POWERHOUSE. Set your dairy apart with feed ingredients that optimize the health of your herd." />
+
+        <meta property="og:image" content="{{asset('images/general/AH-animal-nutrition-share.png')}}"/>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
