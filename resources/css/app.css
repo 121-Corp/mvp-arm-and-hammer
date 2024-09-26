@@ -1,3 +1,330 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Intro Cond";
+    src: url("../../public/fonts/IntroDemoCond-Black.woff2"),
+         url("../../public/fonts/IntroDemoCond-Black.woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Light.woff2"),
+         url("../../public/fonts/KohinoorLatin-Light.woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-LightItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-LightItalic.woff");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Book.woff2"),
+         url("../../public/fonts/KohinoorLatin-Book.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-BookItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-BookItalic.woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Demi.woff2"),
+         url("../../public/fonts/KohinoorLatin-Demi.woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-DemiItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-DemiItalic.woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Medium.woff2"),
+         url("../../public/fonts/KohinoorLatin-Medium.woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-MediumItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-MediumItalic.woff");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Bold.woff2"),
+         url("../../public/fonts/KohinoorLatin-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-BoldItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-BoldItalic.woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-Black.woff2"),
+         url("../../public/fonts/KohinoorLatin-Black.woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kohinoor Latin";
+    src: url("../../public/fonts/KohinoorLatin-BlackItalic.woff2"),
+         url("../../public/fonts/KohinoorLatin-BlackItalic.woff");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@layer components {
+    .ah-container {
+        @apply w-full max-w-[1440px] mx-auto px-[15px] md:px-[20px] lg:px-[40px] xl:px-[70px] 2xl:px-[110px] 3xl:px-[165px];
+    }
+
+    .ah-text-link {
+        @apply underline decoration-1 underline-offset-1 decoration-transparent transition-decoration-color duration-300 ease-in-out
+    }
+
+    .ah-text-link:hover,
+    .ah-text-link:active {
+        @apply underline decoration-1 underline-offset-1 decoration-current
+    }
+
+    .ah-text-link-underline {
+        @apply underline decoration-1 underline-offset-1 decoration-current transition-decoration-color duration-300 ease-in-out
+    }
+
+    .ah-text-link-underline:hover,
+    .ah-text-link-underline:active {
+        @apply underline decoration-1 underline-offset-1 decoration-transparent
+    }
+
+    .ah-button {
+        @apply inline-flex justify-center items-center pt-[14px] pb-[18px] px-[20px]
+                font-kohinoor font-medium text-[14px] leading-none text-center normal-case no-underline
+    }
+
+    .ah-button-blue {
+        @apply ah-button
+                text-white bg-ah-blue border border-ah-blue transition-colors duration-500
+                hover:bg-white hover:text-ah-blue
+    }
+    .ah-button-white {
+        @apply ah-button
+                text-ah-blue bg-white border border-white transition-colors duration-500
+                hover:bg-ah-blue  hover:text-white
+    }
+}
+
+/* Main site header */
+#mainHeader {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+#desktopMenu > li:nth-child(1),
+#desktopMenu > li:nth-child(2) {
+    position: relative;
+}
+
+#desktopMenu > li:nth-child(1):after,
+#desktopMenu > li:nth-child(2):after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #dadada;
+}
+#advantage div>ul {
+    list-style-position: outside;
+    list-style-type: disc;
+}
+@media (min-height: 480px) {
+    #mobileMenu > ul {
+        row-gap: 13%;
+    }
+}
+
+@media (min-height: 640px) {
+    #mobileMenu > ul {
+        row-gap: 15%;
+    }
+}
+
+/* For Distributors and Representatives pages */
+@media (min-width: 640px) {
+    .contact-cards-list > div:nth-of-type(2n-1):last-child:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #efefef;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-cards-list > div:nth-of-type(3n-1):last-child:before,
+    .contact-cards-list > div:nth-of-type(3n-2):last-child:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #efefef;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contact-cards-list > div:nth-of-type(4n):before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #efefef;
+    }
+
+    .contact-cards-list > div:nth-of-type(4n-1):last-child:before,
+    .contact-cards-list > div:nth-of-type(4n-2):last-child:before,
+    .contact-cards-list > div:nth-of-type(4n-3):last-child:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #efefef;
+    }
+}
+
+
+/* Animation Products pages logo */
+    /* SIBLING FADE: fade out siblings around a hovered item */
+
+    .sibling-fade { visibility: hidden; }
+    /* Prevents :hover from triggering in the gaps between items */
+
+    .sibling-fade > * { visibility: visible; }
+    /* Brings the child items back in, even though the parent is `hidden` */
+
+    .sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+    /* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+    .sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }
+    /* Fade out all items when the parent is hovered */
+
+    .sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+    /* Fade in the currently hovered item */
+
+    .sibling-fade {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sibling-fade > * {
+      background: white;
+      padding: 1em;
+      flex: auto;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
+    /*Termina la animación*/
+
+
+    input[type="text"]::-webkit-calendar-picker-indicator,
+    input[type="email"]::-webkit-calendar-picker-indicator,
+    input[type="number"]::-webkit-calendar-picker-indicator,
+    input[type="search"]::-webkit-calendar-picker-indicator {
+        display: none !important;
+    }
+
+  /* Shine animation Dairy section */
+
+ /* Shine */
+.hover-shine figure {
+	position: relative;
+    overflow-x: hidden;
+}
+.hover-shine figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+    display: none;
+}
+.hover-shine figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+    display: block;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/* Finish shine animation  */
+
+
+/* contact form focus */
+input#salesRepresentative:focus ~ #btnSalesRepresentative {
+    color: black;
+}
+input#distributor:focus ~ button#btnDistributor{
+    color: black;
+}
